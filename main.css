@@ -1,12 +1,20 @@
 @import 'main.scss';
 body {
-    background-color: greenyellow;
+    background-color: whitesmoke;
     color: black;
+}
+
+.icon {
+    font-size: 3rem;
+    float: left;
+    padding-left: 0, 5em;
 }
 
 .DropMeny {
     display: flex;
     position: right;
+    font-size: 40px;
+    width: 100px;
 }
 
 .DropLinks-content {
@@ -23,3 +31,5 @@ body {
 header {
     text-align: center;
 }
+
+.logo {}
