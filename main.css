@@ -1,1 +1,25 @@
-body {}
+@import 'main.scss';
+body {
+    background-color: greenyellow;
+    color: black;
+}
+
+.DropMeny {
+    display: flex;
+    position: right;
+}
+
+.DropLinks-content {
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.DropMeny:hover {
+    background-color: pink;
+}
+
+header {
+    text-align: center;
+}
