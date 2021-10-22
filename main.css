@@ -28,7 +28,7 @@ body {
     background-color: pink;
 }
 
-header {
+.navbar {
     text-align: center;
 }
 
@@ -39,6 +39,7 @@ header {
 
 .first_img {
     width: 100%;
+    height: 300px;
 }
 
 .second_img {

@@ -4,19 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- adding bootstrap and jQuery & JavaScript-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--stylesheet-->
     <link rel="stylesheet" href="main.css">
     <title>ECS Hacker Escape Room</title>
 </head>
-<!--header esc-->
-<header id="esc" class="grid">
+<!--navigation bar + header-->
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid"></div>
     <h1>[ESC]</h1>
     <h2> Hacker Escape Room</h2>
-    <img class="first_img" src="https://picsum.photos/id/79/200" alt="a grey picture of a desert">
-    <!-- read more går till ett annat område i texten-->
-</header>
-
+    <div class="container">
+        <div class="dropdown">
+            <button class="button button-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><img
+                    src="https://img.icons8.com/material-rounded/24/000000/menu--v1.png" />
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Play online</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Play on-site</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">home</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">The story</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Contact us</a></li>
+                </li>
+            </ul>
+        </div>
+        <img class="first_img" src="/images/dark.jpg" alt="a boy in black hoodie">
+    </div>
+</nav>
 <!-- main + area 1-->
-<main class="main">
+<main class="container">
     <section id="area_1" class="grid">
         <div class="content-wrap">
             <button class="onsite_link">🏠 On-site link</button></a>
@@ -28,30 +47,30 @@
             <h2 class="content-titel">Popular challenges righth now</h2>
         </div>
     </section>
-    <!-- area 2, swipe boxes-->
+    <!-- area 2, swipe cards-->
     <section id="area_2" class="grid">
-        <div class="horizontal-scroll-wrapper"><img class="scroll_img" src="https://picsum.photos/id/211/200"
-                alt="a green window">1
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nostrum dicta quidem alias maiores, vitae
-            sint iste ratione fugit reiciendis perferendis quos provident adipisci eaque aut esse dignissimos totam
-            voluptate! Incidunt veritatis quis delectus dicta accusamus perspiciatis neque, modi repellat.
+        <div class="horizontal-scroll-wrapper">
+            <img class="scroll_img" src="/images/security.jpg" alt="a green window"> -->
+            <h3>Title of challenge</h3>
+            <p>2 participants (networked)</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat nostrum cupiditate at et.</p>
+            <button>Take challenge online</button>
         </div><br>
-        <div><img class="scroll_img" src="https://picsum.photos/id/212/200" alt="a green window">1
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, esse labore. Perspiciatis, id impedit saepe
-            quo veniam consectetur doloribus nemo. Repellendus doloribus saepe rem blanditiis perferendis inventore.
-            Exercitationem quam maiores doloribus a dicta sequi repellendus, architecto facere perspiciatis eveniet sit
-            minus animi inventore deserunt amet atque corporis accusamus? Deleniti, blanditiis.
+        <div><img class="scroll_img" src="/images/computer5.jpg" alt="a green window">
+            <h3>Title of room (on-site)</h3>
+            <p>2-4 participants</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat nostrum cupiditate at et.</p>
+            <button>Book this room</button>
         </div><br>
-        <div><img class="scroll_img" src="https://picsum.photos/id/213/200" alt="a green window">1
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, mollitia? Nulla excepturi architecto
-            laborum, vel fuga tempore adipisci, mollitia, molestiae enim veritatis velit omnis eveniet voluptate ex
-            magnam perspiciatis ipsum praesentium repellendus magni ea! Nemo quo sequi tempore corporis saepe at error
-            molestiae enim laborum earum. Fugit tempora placeat excepturi distinctio aliquam quam harum recusandae
-            cupiditate! Aut sapiente quidem similique!
+        <div><img class="scroll_img" src="/images/screen.jpg" alt="a green window">
+            <h3>Title of room (on-site)</h3>
+            <p>2-4 participants</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat nostrum cupiditate at et.</p>
+            <button>Book this room</button>
         </div><br>
         <ul>
             <li>
-                <div class="card"><img class="second_img" src="https://picsum.photos/id/208/200" alt="a green window">1
+                <div class="card"><img class="second_img" src="/images/girl2.jpg" alt="a green window">1
                 </div>
                 <div class="card">2</div>
                 <div class="card">3</div>
@@ -59,12 +78,7 @@
         </ul>
 
     </section>
-
-
-    <!-- <a href="https://pexels.com" target="__blank">-->
     <img class="logo" src="/images/computer.jpg">
-
-
     <section id="area_3" class="grid">
         <p>💻 All online challenges</p>
         <p>🏠 All on-site challenges</p>
@@ -75,7 +89,7 @@
     </section>
 
     <section id="area_4" class="grid">
-        <img class="third_img" src="https://picsum.photos/id/209/200" alt="a green window">
+        <img class="third_img" src="/images/team2.jpg" alt="a green window">
         <h3>Play with your friends or build your team stronger at work</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, soluta recusandae. Assumenda perferendis
             cupiditate consectetur doloribus illum iusto, officiis, vero necessitatibus beatae, cumque provident hic.
@@ -84,7 +98,7 @@
     </section>
 
     <section id="area_5" class="grid">
-        <img class="third_img" src="https://picsum.photos/id/210/200" alt="a green window">
+        <img class="third_img" src="/images/end.jpg" alt="a green window">
         <h3>Play online or visit our venue for one of our 25 escape rooms</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestias recusandae earum necessitatibus
             quisquam labore perspiciatis, consequuntur voluptatem quasi eius totam omnis fuga. Suscipit, perferendis!
@@ -113,35 +127,7 @@
         </div>
     </footer>
 </main>
-<!-- <header>
-    <p class="icon">💫</p>
-    <h1 class="logo">
-        [ESC]</h1><br>
-    <p> Hacker Escape Room</p>
-</header>
-<div class="DropMeny">
-    <p>≡</p>
-</div>
-<div class="DropLinks">
-    make links!-->
-<!-- <span>click me</span>
-    <p>Play online</p>
-    <p>Play on-site</p>
-    <p>The story</p>
-    <p>Contact us</p>
-</div> -->
-
-
-<body class="container">
-    <div class="first image" alt="first image"></div>
-    <script src="js/jquery.js"></script>
-    <script>
-        $(function () {
-            $("#page-wrap").wrapInner("<table cellspacing='30'><tr>");
-            $(".post").wrap("<td>");
-        });
-    </script>
-    <script type="text/javascript" scr="app.js"></script>
+<script type="text/javascript" scr="app.js"></script>
 </body>
 
 </html>
