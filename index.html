@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- todo tomorrow- text over img, positioning, start making big layout-->
 
 <head>
     <meta charset="UTF-8">
@@ -9,14 +10,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!--stylesheet-->
-    <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="wide-screen.css">
     <title>ECS Hacker Escape Room</title>
 </head>
 <!--navigation bar + header-->
-<nav class="navbar navbar-expand-md navbar-light bg-light">
-    <div class="container-fluid"></div>
-    <h1>[ESC]</h1>
-    <h2> Hacker Escape Room</h2>
+<nav class="navbar">
+    <div class="container-fluid">
+        <h2>🔵 [ESC] Hacker Escape Room</h2>
+    </div>
     <div class="container">
         <div class="dropdown">
             <button class="button button-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><img
@@ -31,101 +33,179 @@
                 </li>
             </ul>
         </div>
-        <img class="first_img" src="/images/dark.jpg" alt="a boy in black hoodie">
-    </div>
 </nav>
-<!-- main + area 1-->
-<main class="container">
-    <section id="area_1" class="grid">
-        <div class="content-wrap">
-            <button class="onsite_link">🏠 On-site link</button></a>
-            <a href="online_link">Online challenges</a>
 
-            <p>This is a quote about how amazing this place is and how much fun me and my friends had when we tried it-
-                quote
-                author</p>
-            <h2 class="content-titel">Popular challenges righth now</h2>
-        </div>
-    </section>
-    <!-- area 2, swipe cards-->
-    <section id="area_2" class="grid">
-        <div class="horizontal-scroll-wrapper">
-            <img class="scroll_img" src="/images/security.jpg" alt="a green window"> -->
-            <h3>Title of challenge</h3>
-            <p>2 participants (networked)</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat nostrum cupiditate at et.</p>
-            <button>Take challenge online</button>
-        </div><br>
-        <div><img class="scroll_img" src="/images/computer5.jpg" alt="a green window">
-            <h3>Title of room (on-site)</h3>
-            <p>2-4 participants</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat nostrum cupiditate at et.</p>
-            <button>Book this room</button>
-        </div><br>
-        <div><img class="scroll_img" src="/images/screen.jpg" alt="a green window">
-            <h3>Title of room (on-site)</h3>
-            <p>2-4 participants</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat nostrum cupiditate at et.</p>
-            <button>Book this room</button>
-        </div><br>
-        <ul>
-            <li>
-                <div class="card"><img class="second_img" src="/images/girl2.jpg" alt="a green window">1
+<body>
+    <div class="container-fluid">
+        <img class="img-" src="/images/dark.jpg" alt="a boy in black hoodie">
+    </div>
+    <!-- </nav> -->
+    <!-- main + area 1-->
+    <main class="container">
+        <section id="area_1" class="grid">
+            <div class="content-wrap">
+                <button class="onsite_link">🏠 On-site link</button></a>
+                <a href="online_link">Online challenges</a>
+
+                <p>This is a quote about how amazing this place is and how much fun me and my friends had when we tried
+                    it-
+                    quote
+                    author</p>
+                <h2 class="content-titel">Popular challenges righth now</h2>
+            </div>
+        </section>
+        <!-- area 2, able to swipe cards-->
+        <section id="area_2" class="grid">
+
+            <div id="slides" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#slides" data-slide-to="0" class="active"></li>
+                    <li data-target="#slides" data-slide-to="0"></li>
+                    <li data-target="#slides" data-slide-to="0"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item" class="active">
+                        <img class="security_img" src="/images/security.jpg" alt="security">
+                        <div class="textarea">
+                            <h3>Title of challenge</h3>
+                            <p>2 participants (networked)</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat nostrum cupiditate
+                                at
+                                et.
+                            </p>
+                        </div>
+                        <button>Take challenge online</button>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="computer_img" src="/images/computer5.jpg" alt="computer">
+                        <div class="container-fluid">
+                            <h3>Title of room (on-site)</h3>
+                            <p>2-4 participants</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat nostrum cupiditate
+                                at
+                                et.
+                            </p>
+                        </div>
+                        <button>Book this room</button>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="screen_img" src="/images/screen.jpg" alt="screen">
+                        <div class="textarea">
+                            <h3>Title of room (on-site)</h3>
+                            <p>2-4 participants</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat nostrum cupiditate
+                                at
+                                et.
+                            </p>
+                        </div>
+                        <button>Book this room</button>
+                    </div>
                 </div>
-                <div class="card">2</div>
-                <div class="card">3</div>
-            </li>
-        </ul>
+                <!--cards-->
+                <div class="container-fluid padding">
+                    <div class="row padding">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top" src="/images/girl.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-titel">Emma Jones</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, architecto.
+                                    </p>
+                                    <a href="#" class="btn btn-outline-secondary">see profile</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top" src="/images/girl2.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-titel">Starlet Johanssen</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, architecto.
+                                    </p>
+                                    <a href="#" class="btn btn-outline-secondary">see profile</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img class="card-img-top" src="/images/girl3.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-titel">May Dott</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, architecto.
+                                    </p>
+                                    <a href="#" class="btn btn-outline-secondary">see profile</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </section> --> -->
+                <div class="container-fluid">
+                    <img class="img-" src="/images/computer.jpg" alt="a computer">
+                </div>
+                <section id="area_3" class="grid">
+                    <p>💻 All online challenges</p>
+                    <p>🏠 All on-site challenges</p>
+                    <br>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquam, id adipisci eaque
+                        laudantium
+                        nisi
+                        deleniti ab assumenda pariatur deserunt inventore. At unde dolorem qui.</p>
+                    <button>Read the full story</button>
+                </section>
+                <!-- make this to 4 boxes grid in big layout-->
+                <section id="area_4" class="grid">
+                    <div class="container-fluid">
+                        <img class="img-" src="/images/team2.jpg" alt="people playing on computers">
+                    </div>
 
-    </section>
-    <img class="logo" src="/images/computer.jpg">
-    <section id="area_3" class="grid">
-        <p>💻 All online challenges</p>
-        <p>🏠 All on-site challenges</p>
+                    <h3>Play with your friends or build your team stronger at work</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, soluta recusandae. Assumenda
+                        perferendis
+                        cupiditate consectetur doloribus illum iusto, officiis, vero necessitatibus beatae, cumque
+                        provident
+                        hic.
+                    </p>
+                    <button>Book on-site today</button>
+                    <div class="container-fluid">
+                        <img class="img-" src="/images/end.jpg" alt="text: you`ve been hacked">
+                    </div>
+                    <h3>Play online or visit our venue for one of our 25 escape rooms</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestias recusandae earum
+                        necessitatibus
+                        quisquam labore perspiciatis, consequuntur voluptatem quasi eius totam omnis fuga. Suscipit,
+                        perferendis!
+                    </p>
+                    <button>Book on-site today</button>
+                    <p>💻 Play online</p>
+                </section>
+</body>
+<!--footer with boxes-->
+<Footer class="footer">
+    <div class="firstbox">
+        <h5>[ESC] Hacker Escape Rooms</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae praesentium quis
+            voluptates
+            dolores
+            at
+            quos quae! Deleniti, vitae!</p>
+    </div>
+    <div class="secondbox">
+        <h5>Site Map</h5>
+        <p>the Story</p>
+        <p>Contact Us</p>
+        <p>Legal</p>
         <br>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquam, id adipisci eaque laudantium nisi
-            deleniti ab assumenda pariatur deserunt inventore. At unde dolorem qui.</p>
-        <button>Read the full story</button>
-    </section>
-
-    <section id="area_4" class="grid">
-        <img class="third_img" src="/images/team2.jpg" alt="a green window">
-        <h3>Play with your friends or build your team stronger at work</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, soluta recusandae. Assumenda perferendis
-            cupiditate consectetur doloribus illum iusto, officiis, vero necessitatibus beatae, cumque provident hic.
-        </p>
-        <button>Book on-site today</button>
-    </section>
-
-    <section id="area_5" class="grid">
-        <img class="third_img" src="/images/end.jpg" alt="a green window">
-        <h3>Play online or visit our venue for one of our 25 escape rooms</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestias recusandae earum necessitatibus
-            quisquam labore perspiciatis, consequuntur voluptatem quasi eius totam omnis fuga. Suscipit, perferendis!
-        </p>
-        <button>Book on-site today</button>
-        <p>💻 Play online</p>
-    </section>
-    <Footer class="contact_us">
-        <div class="div firstbox">
-            <h3>[ESC] Hacker Escape Rooms</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae praesentium quis voluptates dolores
-                at
-                quos quae! Deleniti, vitae!</p>
-        </div>
-        <div class="div secondbox">
-            <h2>Site Map</h2>
-            <p>the Story</p>
-            <p>Contact Us</p>
-            <p>Legal</p>
-        </div>
-        <div class="div thirdbox">
-            <h2>Follow us on</h2>
-            <p>Facebook</p>
-            <p>Instagram</p>
-            <p>YouTube</p>
-        </div>
-    </footer>
+        <p>play online</p>
+        <p>play onsite</p>
+    </div>
+    <div class="thirdbox">
+        <h5>Follow us on</h5>
+        <p>Facebook</p>
+        <p>Instagram</p>
+        <p>YouTube</p>
+    </div>
+</footer>
 </main>
 <script type="text/javascript" scr="app.js"></script>
 </body>

@@ -94,3 +94,9 @@ body {
     ... transform: rotate(-90deg) translateY(-100px);
     ...
 } */
+
+/*make this hover work*/
+
+#menu1:hover {
+    color: gray;
+}
