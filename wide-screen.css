@@ -1,39 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 /* body {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 200px 200px 200px 200px;
 } */
 
-header {
-    position: relative;
-    /* skrivs in som ref när navbar ska positioneras*/
+body {
+    background-color: #011827;
 }
 
-.navbar {
-    /* background-color: white;
-    grid-column-start: 1;
-    grid-column-end: 10; */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #011827;
+    width: 500rem;
+    height: 35rem;
+    border: 0;
+    margin: 0;
+    border: 0;
+    /* position: relative;
+    skrivs in som ref när navbar ska positioneras */
+}
+
+.logo {
+    padding-top: 30px;
+    padding-left: 10px;
+    height: 30rem;
+    width: 30rem;
+    float: left;
+}
+
+.hero {
+    background-color: #011827;
+}
+
+h1 {
+    font-style: bold;
+    font-size: 6rem;
+    margin-top: 200px;
+    color: white;
+    padding-left: 350px;
 }
 
 .img_0 {
-    width: 100%;
-    height: 600px;
+    width: 150rem;
+    height: 100rem;
+    border-top: none;
+    margin-top: none;
 }
 
-.card {
-    border: 1px solid #ccc;
-    width: 100%;
-    height: auto;
-    box-sizing: border-box;
-    padding: 0 6px;
+#online_btn {
+    color: white;
+    background-color: #E3170A;
 }
 
-ul {
+#onsite_btn {
+    color: #011827;
+    background: #8ACFE5;
+}
+
+/*utkommenterad navbar- ska in i mobilversionen*/
+
+.navbar {
+    display: none;
+}
+
+.navbar ul {
     display: flex;
     padding: 0;
     justify-content: space-between;
     font-size: 100%
 }
+
+.navbar2 {
+    background-color: #011827;
+    width: 200rem;
+    font-size: 3rem;
+    height: 10rem;
+}
+
+ul.menu-bar {
+    color: white;
+    margin-bottom: 0;
+    border: 0;
+    margin-left: 450px;
+    margin-right: 700px;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+}
+
+ul li#other-color {
+    color: #8ACFE5;
+}
+
+/*  */
 
 /* #area_3 {
     display: grid;
@@ -74,11 +138,12 @@ ul {
 /*-- avsluta ovan med clear: bottom ex. THIS AREA DONE*/
 
 .footer {
+    font-size: 25px;
+    color: white;
+    background-color: #011827;
     clear: both;
     padding-top: 50px;
-    grid-column-start: 1;
-    grid-column-end: 13;
-    font-size: 100%;
+    height: 500px;
 }
 
 .firstbox {

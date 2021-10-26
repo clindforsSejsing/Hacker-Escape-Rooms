@@ -11,18 +11,17 @@
     <!--stylesheet-->
     <!-- <link rel="stylesheet" href="main.css"> -->
     <link rel="stylesheet" href="wide-screen.css">
-    <title>ECS Hacker Escape Room</title>
+    <title>ECS Hacker Escape Rooms</title>
 </head>
 
 <body>
-    <!--navigation bar + header-->
-
     <header>
         <div class="container-fluid">
-            <h2>🔵 [ESC] Hacker Escape Room</h2>
+            <img class="logo" src="/images/logo.png">
+            <h1> Hacker Escape Rooms</h1>
         </div>
     </header>
-    <!--positionera navbaren i css-->
+    <!--positionera navbaren i css, syns bara i mobil-layout-->
     <nav class="navbar">
         <div class="dropdown">
             <button class="button button-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><img
@@ -39,198 +38,158 @@
         </div>
         </div>
     </nav>
+    <nav class="navbar2">
+        <ul class="menu-bar">
+            <li>Play online</li>
+            <li>Play on-site</li>
+            <li>The Story</li>
+            <li id="other-color">Contact us</li>
+        </ul>
+    </nav>
+    <!-- hero-picture-->
+    <div class="hero">
+        <div class="view overlay rounded-top">
+            <img class="img_0" src="/images/hacker3.1.jpg" alt="a person in a hoodie">
 
-    <!-------------------------------------------------------->
-    <div class="container-fluid">
-        <img class="img_0" src="/images/master.jpg" alt="">
-        <br>
-        <br>
-        <button class="onsite_link">🏠 On-site link</button>
-        <a href="online_link">Online challenges</a>
-        <!------------------------------------------------------>
-        <main>
-            <!--göra profilbilderna rundade-->
-            <section id="area_1">
-                <div class="quote1">
-                    <div style="margin:40px">
-                        <img width="140px" height="140px" class="img-cirkel" src="\images\happy1.jpg">
-                    </div>
-                    <blockquote class="first_quote">This is a quote about how amazing this place is and how
-                        much fun me
-                        and
-                        my friends had when
-                        we
-                        tried
-                        it</blockquote><cite>
-                        quote
-                        author</cite>
-                </div>
+            <!-- Button -->
+            <button class="btn btn-rounded" button id="online_btn">Online challenges</button>
+            <button class="btn btn-rounded" button id="onsite_btn">On-site challenges</button>
+        </div>
+    </div>
+
+
+    <!-- </div> -->
+
+    <!------------------------------------------------------>
+    <main>
+        <!--section 1, quotes-->
+        <section id="area_1">
+            <div class="quote1">
                 <div style="margin:40px">
-                    <img width="140px" height="140px" class="img-cirkel" src="\images\happy3.jpg">
+                    <img width="140px" height="140px" class="img-cirkel" src="\images\happy2.0.png">
                 </div>
-                <div class="quote2">
-                    <blockquote class="second_quote">This is a quote about how amazing this place is and how much fun me
-                        and
-                        my friends had when
-                        we
-                        tried
-                        it</blockquote><cite>
-                        quote
-                        author</cite>
+                <blockquote class="first_quote">This is a quote about how amazing this place is and how
+                    much fun me
+                    and
+                    my friends had when
+                    we
+                    tried
+                    it</blockquote><cite>
+                    quote
+                    author</cite>
+            </div>
+            <div style="margin:40px">
+                <img width="140px" height="140px" class="img-cirkel" src="\images\happy3.2.png">
+            </div>
+            <div class="quote2">
+                <blockquote class="second_quote">This is a quote about how amazing this place is and how
+                    much
+                    fun me
+                    and
+                    my friends had when
+                    we
+                    tried
+                    it</blockquote><cite>
+                    quote
+                    author</cite>
+            </div>
+        </section>
+        <!-------------------------------------------->
+        <section id="area_2">
+            <h1 class="content-titel">Popular challenges righth now</h1>
+            <div class="card">
+                <div class="container.fluid">
+                    <img src="/images/computer3.jpg" alt="">
+                    <h3>Title of challenge</h3>
+                    <p>2 participants (networked)</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat nostrum
+                        cupiditate
+                        at
+                        et.
+                    </p>
+                    <button>Take challenge online</button>
                 </div>
-            </section>
-            <!-------------------------------------------->
-            <section id="area_2">
-                <h1 class="content-titel">Popular challenges righth now</h1>
                 <div class="card">
                     <div class="container.fluid">
-                        <img src="/images/computer3.jpg" alt="">
-                        <h3>Title of challenge</h3>
-                        <p>2 participants (networked)</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat nostrum
+                        <img src="/images/team2.jpg" alt="">
+                        <h3>Title of room (on-site)</h3>
+                        <p>2-4 participants</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat
+                            nostrum
                             cupiditate
                             at
                             et.
                         </p>
-                        <button>Take challenge online</button>
+                        <button>Book this room</button>
                     </div>
                     <div class="card">
                         <div class="container.fluid">
-                            <img src="/images/team2.jpg" alt="">
+                            <img src="/images/hacker1.jpg" alt="">
                             <h3>Title of room (on-site)</h3>
                             <p>2-4 participants</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat nostrum
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat
+                                nostrum
                                 cupiditate
                                 at
                                 et.
                             </p>
                             <button>Book this room</button>
                         </div>
-                        <div class="card">
-                            <div class="container.fluid">
-                                <img src="/images/hacker1.jpg" alt="">
-                                <h3>Title of room (on-site)</h3>
-                                <p>2-4 participants</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat
-                                    nostrum
-                                    cupiditate
-                                    at
-                                    et.
-                                </p>
-                                <button>Book this room</button>
+                        <section id="area_3">
+                            <p>💻 All online challenges</p>
+                            <p>🏠 All on-site challenges</p>
+                            <br>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquam,
+                                id
+                                adipisci
+                                eaque
+                                laudantium
+                                nisi
+                                deleniti ab assumenda pariatur deserunt inventore. At unde dolorem qui.
+                            </p>
+                            <button>Read the full story</button>
+                        </section>
+                        <!-- make this to 4 boxes grid in big layout-->
+                        <section id="area_4">
+                            <div class="img_1">
+                                <img src="/images/girl2.jpg" alt="people playing on computers">
                             </div>
-                            <!-- <h1 class="content-titel">Popular challenges righth now</h1>
-                    <div id="slides" class="carousel slide" data-ride="carousel">
-                        <ul class="carousel-indicators">
-                            <li data-target="#slides" data-slide-to="0" class="active"></li>
-                            <li data-target="#slides" data-slide-to="0"></li>
-                            <li data-target="#slides" data-slide-to="0"></li>
-                        </ul>
-                        <div class="carousel-inner">
-                            <div class="carousel-item" class="active"> -->
-                            <!-- <div class="container.fluid">
-                            <img class="security_img" src="/images/security.jpg" alt="security">
-                            <div class="textarea">
-                                <h3>Title of challenge</h3>
-                                <p>2 participants (networked)</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni placeat nostrum
-                                    cupiditate
-                                    at
-                                    et.
+                            <div class="text_1">
+                                <h2>Play with your friends or build your team stronger at work</h2>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+                                    quibusdam
+                                    accusamus
+                                    itaque
+                                    enim eum dolorum numquam facere repellendus explicabo harum. Eos aut
+                                    a
+                                    harum
+                                    corrupti!
                                 </p>
-                                <button>Take challenge online</button>
-                            </div> -->
-                            <!-- <div class="carousel-item"> -->
-                            <!-- <div class="container.fluid">
-                               
+                                <button>Book on-site today</button>
+                            </div>
+                            <div class="img_2">
+                                <img src="/images/end.jpg" alt="text: you`ve been hacked">
+                            </div>
+                            <div class="text_2">
+                                <h2>Play online or visit our venue for one of our 25 escape rooms</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                                    molestias
+                                    recusandae
+                                    earum
+                                    necessitatibus
+                                    quisquam labore perspiciatis, consequuntur voluptatem quasi eius
+                                    totam
+                                    omnis
+                                    fuga.
+                                    Suscipit,
+                                    perferendis!
+                                </p>
+                                <button>Book on-site today</button>
+                                <button>💻 Play online</button>
+                            </div>
 
-                             <div class="" w3-card-4">
-                                    <img src="/images/girl.jpg">
-
-                                    <h4 class="card-titel">Emma Jones</h4>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt,
-                                        architecto.
-                                    </p>
-                                    <a href="#" class="btn btn-outline-secondary">see profile</a>
-                                </div>
-
-                                <div class="w3-card-4">
-                                    <img src="/images/girl2.jpg">
-
-                                    <h4 class="card-titel">Starlet Johanssen</h4>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt,
-                                        architecto.
-                                    </p>
-                                    <a href="#" class="btn btn-outline-secondary">see profile</a>
-
-                                </div>
-
-
-                                <div class="w3-card-4">
-                                    <img class="card-img-top" src="/images/hacker1.jpg">
-                                    <div class="card-body">
-                                        <h4 class="card-titel">May Dott</h4>
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt,
-                                            architecto.
-                                        </p>
-                                        <a href="#" class="btn btn-outline-secondary">see profile</a>
-                                    </div>
-                                </div> -->
-
-                            <!-- </section> -->
-                            <!-- <div class="container-fluid">
-                                <img class="img-" src="/images/computer.jpg" alt="a computer">
-                            </div> -->
-                            <section id="area_3">
-                                <p>💻 All online challenges</p>
-                                <p>🏠 All on-site challenges</p>
-                                <br>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquam, id
-                                    adipisci
-                                    eaque
-                                    laudantium
-                                    nisi
-                                    deleniti ab assumenda pariatur deserunt inventore. At unde dolorem qui.</p>
-                                <button>Read the full story</button>
-                            </section>
-                            <!-- make this to 4 boxes grid in big layout-->
-                            <section id="area_4">
-                                <div class="img_1">
-                                    <img src="/images/girl2.jpg" alt="people playing on computers">
-                                </div>
-                                <div class="text_1">
-                                    <h2>Play with your friends or build your team stronger at work</h2>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
-                                        quibusdam
-                                        accusamus
-                                        itaque
-                                        enim eum dolorum numquam facere repellendus explicabo harum. Eos aut a
-                                        harum
-                                        corrupti!
-                                    </p>
-                                    <button>Book on-site today</button>
-                                </div>
-                                <div class="img_2">
-                                    <img src="/images/end.jpg" alt="text: you`ve been hacked">
-                                </div>
-                                <div class="text_2">
-                                    <h2>Play online or visit our venue for one of our 25 escape rooms</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestias
-                                        recusandae
-                                        earum
-                                        necessitatibus
-                                        quisquam labore perspiciatis, consequuntur voluptatem quasi eius totam
-                                        omnis
-                                        fuga.
-                                        Suscipit,
-                                        perferendis!
-                                    </p>
-                                    <button>Book on-site today</button>
-                                    <button>💻 Play online</button>
-                                </div>
-
-                            </section>
-        </main>
+                        </section>
+    </main>
 </body>
 <!--footer with boxes-->
 <Footer class="footer">
@@ -260,6 +219,5 @@
         <p><img src="/images/YouTube_icon.png"> YouTube</p>
     </div>
 </footer>
-<script type="text/javascript" scr="app.js"></script>
 
 </html>
