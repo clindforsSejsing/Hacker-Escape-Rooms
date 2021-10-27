@@ -9,7 +9,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!--stylesheet-->
-    <!-- <link rel="stylesheet" href="main.css"> -->
     <link rel="stylesheet" href="wide-screen.css">
     <title>ECS Hacker Escape Rooms</title>
 </head>
@@ -21,24 +20,7 @@
             <h1> Hacker Escape Rooms</h1>
         </div>
     </header>
-    <!--positionera navbaren i css, syns bara i mobil-layout-->
     <nav class="navbar">
-        <div class="dropdown">
-            <button class="button button-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><img
-                    src="https://img.icons8.com/material-rounded/24/000000/menu--v1.png" />
-            </button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Play online</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Play on-site</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">home</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">The story</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Contact us</a></li>
-                </li>
-            </ul>
-        </div>
-        </div>
-    </nav>
-    <nav class="navbar2">
         <ul class="menu-bar">
             <li>Play online</li>
             <li>Play on-site</li>
@@ -63,10 +45,10 @@
     <!------------------------------------------------------>
     <main>
         <!--section 1, quotes-->
-        <section id="area_1">
+        <section id="section_1">
             <div class="quote1">
                 <div style="margin:40px">
-                    <img width="140px" height="140px" class="img-cirkel" src="images\happy2.0.png">
+                    <img class="img-cirkel" src="images\happy2.0.png">
                 </div>
                 <blockquote class="first_quote">This is a quote about how amazing this place is and how
                     much fun me
@@ -95,7 +77,7 @@
             </div>
         </section>
         <!-------------------------------------------->
-        <section id="area_2">
+        <section id="section_2">
             <h1 class="content-titel">Popular challenges righth now</h1>
             <div class="card">
                 <div class="container.fluid">
@@ -135,7 +117,7 @@
                             </p>
                             <button>Book this room</button>
                         </div>
-                        <section id="area_3">
+                        <section id="section_3">
                             <p>💻 All online challenges</p>
                             <p>🏠 All on-site challenges</p>
                             <br>
@@ -150,7 +132,7 @@
                             <button>Read the full story</button>
                         </section>
                         <!-- make this to 4 boxes grid in big layout-->
-                        <section id="area_4">
+                        <section id="section_4">
                             <div class="img_1">
                                 <img src="images/girl2.jpg" alt="people playing on computers">
                             </div>
@@ -193,30 +175,25 @@
 </body>
 <!--footer with boxes-->
 <Footer class="footer">
-    <div class="firstbox">
-        <h5>[ESC] Hacker Escape Rooms</h5>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae praesentium quis
-            voluptates
-            dolores
-            at
-            quos quae! Deleniti, vitae!</p>
+    <div class="boxes">
+        <h2>[ESC] Hacker Escape Rooms</h2>
+        <p>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos
+            omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
     </div>
-    <div class="secondbox">
-        <h5>Site Map</h5>
-        <p>the Story</p>
+    <div class="boxes">
+        <h2>Site map</h2>
+        <p>The Story</p>
         <p>Contact Us</p>
         <p>Legal</p>
         <br>
-        <p>play online</p>
-        <p>play onsite</p>
+        <p>Play online</p>
+        <p>Play onsite</p>
     </div>
-    <div class="thirdbox">
-        <h5>Follow us on</h5>
-        <p>
-            <img src="images/facebook_icon.png"> Facebook
-        </p>
-        <p><img src="images/instagram_icon.png"> Instagram</p>
-        <p><img src="images/YouTube_icon.png"> YouTube</p>
+    <div class="boxes">
+        <h2>Follow us on</h2>
+        <p> Facebook</p>
+        <p> Instagram</p>
+        <p> Twitter</p>
     </div>
 </footer>
 

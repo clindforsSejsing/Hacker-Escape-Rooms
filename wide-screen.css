@@ -1,9 +1,12 @@
+@import 'main.scss';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-/* body {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 200px 200px 200px 200px;
-} */
+/*stor screen*/
+
+@media screen and (min-width: 800px) {}
+
+/*mobil screen*/
+
+@media screen and (max-width: 800px) {}
 
 body {
     background-color: #011827;
@@ -13,46 +16,129 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-header {
-    background-color: #011827;
-    width: 500rem;
-    height: 35rem;
-    border: 0;
-    margin: 0;
-    border: 0;
-    /* position: relative;
-    skrivs in som ref när navbar ska positioneras */
+/*stor skärm*/
+
+@media screen and (min-width: 800px) {
+    header {
+        background-color: #011827;
+        width: 500rem;
+        height: 35rem;
+        border: 0;
+        margin-top: 0;
+        border: 0;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: left;
+    }
+    h1 {
+        color: #FFFFFF;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 6rem;
+        margin-top: 170px;
+        padding-left: 350px;
+    }
+    .logo {
+        padding-top: 4rem;
+        padding-left: 3rem;
+        padding-right: 2rem;
+        height: 25rem;
+        width: 35rem;
+        float: left;
+        /* padding-top: 30px;
+        padding-left: 10px;
+        height: 20rem;
+        width: 30rem;
+        float: left; */
+    }
+    .hero {
+        top: 216px;
+        background-color: #011827;
+    }
+    .img_0 {
+        width: 150rem;
+        height: 468px;
+        border-top: none;
+        margin-top: none;
+    }
 }
 
-.logo {
-    padding-top: 30px;
-    padding-left: 10px;
-    height: 30rem;
-    width: 30rem;
-    float: left;
+/*mobil skärm*/
+
+@media screen and (max-width: 800px) {
+    header {
+        background-color: #011827;
+        width: 70rem;
+        height: 35rem;
+        font-size: 24px;
+        line-height: 28px;
+        display: block;
+        margin-bottom: 0;
+    }
+    h1 {
+        position: relative;
+        display: block;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 5rem;
+        margin-top: 7rem;
+    }
+    .logo {
+        padding: 5rem 2rem 0rem 3rem;
+        height: 25rem;
+        width: 35rem;
+        float: left;
+        margin-bottom: 0;
+    }
+}
+
+/*big screen*/
+
+@media screen and (min-width: 800px) {
+    ul.menu-bar {
+        color: #FFFFFF;
+        margin: 0 236px 22px 235px;
+        border: 0;
+        list-style: none;
+        display: flex;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        padding: 0;
+        justify-content: space-between;
+    }
+    ul li#other-color {
+        color: #8ACFE5;
+    }
+}
+
+/* tar bort navbar i mobil-version*/
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        display: none;
+    }
+    ul.menu-bar {
+        display: none;
+    }
 }
 
 .hero {
+    top: 216px;
     background-color: #011827;
-}
-
-h1 {
-    font-style: bold;
-    font-size: 6rem;
-    margin-top: 200px;
-    color: white;
-    padding-left: 350px;
 }
 
 .img_0 {
     width: 150rem;
-    height: 100rem;
+    height: 468px;
     border-top: none;
     margin-top: none;
 }
 
 #online_btn {
-    color: white;
+    color: #FFFFFF;
     background-color: #E3170A;
 }
 
@@ -61,40 +147,18 @@ h1 {
     background: #8ACFE5;
 }
 
-/*utkommenterad navbar- ska in i mobilversionen*/
-
-.navbar {
-    display: none;
+#section_1 {
+    background-color: #FFFFFF;
 }
 
-.navbar ul {
-    display: flex;
-    padding: 0;
-    justify-content: space-between;
-    font-size: 100%
+.quote1 {
+    color: #011827
 }
 
-.navbar2 {
-    background-color: #011827;
-    width: 200rem;
-    font-size: 3rem;
-    height: 10rem;
-}
-
-ul.menu-bar {
-    color: white;
-    margin-bottom: 0;
-    border: 0;
-    margin-left: 450px;
-    margin-right: 700px;
-    list-style: none;
-    display: flex;
-    padding: 0;
-    justify-content: space-between;
-}
-
-ul li#other-color {
-    color: #8ACFE5;
+.img-cirkel {
+    margin: 40px;
+    width: 140px;
+    height: 140px;
 }
 
 /*  */
@@ -107,7 +171,7 @@ ul li#other-color {
 
 /* THIS AREA DONE*/
 
-#area_4 {
+#section_4 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     border-style: dotted;
@@ -137,32 +201,54 @@ ul li#other-color {
 
 /*-- avsluta ovan med clear: bottom ex. THIS AREA DONE*/
 
-.footer {
-    font-size: 25px;
-    color: white;
-    background-color: #011827;
-    clear: both;
-    padding-top: 50px;
-    height: 500px;
+/*stor skärm*/
+
+@media screen and (min-width: 800px) {
+    .footer {
+        font-size: 25px;
+        color: #FFFFFF;
+        background-color: #011827;
+        clear: both;
+        padding-top: 50px;
+        height: 500px;
+    }
+    .boxes {
+        box-sizing: border-box;
+        float: left;
+        width: 33.33%;
+        padding: 50px;
+    }
+    /* .secondbox {
+        box-sizing: border-box;
+        float: left;
+        width: 33.33%;
+        padding: 50px;
+    }
+    .thirdbox {
+        box-sizing: border-box;
+        float: left;
+        width: 33.33%;
+        padding: 50px;
+    } */
 }
 
-.firstbox {
-    box-sizing: border-box;
-    float: left;
-    width: 33.33%;
-    padding: 50px;
-}
+/*mobil skärm*/
 
-.secondbox {
-    box-sizing: border-box;
-    float: left;
-    width: 33.33%;
-    padding: 50px;
-}
-
-.thirdbox {
-    box-sizing: border-box;
-    float: left;
-    width: 33.33%;
-    padding: 50px;
+@media screen and (max-width: 800px) {
+    .footer {
+        font-size: 25px;
+        color: #FFFFFF;
+        background-color: #011827;
+        clear: both;
+        padding-top: 50px;
+        height: 500px;
+        margin-left: 4rem;
+    }
+    .footer h2 {
+        font-weight: bold;
+    }
+    .boxes {
+        padding: 2rem;
+        text-indent: 8px;
+    }
 }
