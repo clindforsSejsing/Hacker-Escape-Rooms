@@ -192,29 +192,74 @@ body {
     #section_4 {
         clear: both;
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        align-items: stretch;
+        grid-template-columns: repeat (2 1fr);
+        grid-template-rows: repeat( 2 1fr);
+        /* align-items: stretch; */
         padding: 80px;
+        margin-top: -8rem;
     }
-    .img_1 {
-        grid-column: 0/3;
-        grid-row: 0/3;
+    .img_girl {
+        grid-column: 0/1;
+        grid-row: 0/1;
+        width: 80rem;
+        height: 60rem;
+        margin-left: -8rem;
     }
     .text_1 {
         grid-column: 3/6;
         grid-row: 0/3;
+        width: 80rem;
+        height: 60rem;
+        font-size: 4rem;
     }
     .text_2 {
         grid-column: 0/3;
         grid-row: 3/6;
+        width: 80rem;
+        height: 60rem;
+        font-size: 4rem;
     }
-    .img_2 {
+    .img_hacked {
         grid-column: 2/7;
         grid-row: 2/7;
+        width: 80rem;
+        height: 60rem;
+        margin-left: -9rem;
+    }
+    #btn3 {
+        color: #FFFFFF;
+        background-color: #E3170A;
+        margin-top: 5rem;
+        margin-left: 25rem;
+        font-size: 3rem;
+        font-weight: bold;
+        padding: 0.5rem 5rem 0.5rem 5rem;
+        text-decoration: none;
+    }
+    a {
+        color: #FFFFFF;
+    }
+    #btn4 {
+        color: #FFFFFF;
+        background-color: #E3170A;
+        margin-left: 15rem;
+        margin-top: 2rem;
+        font-size: 3rem;
+        font-weight: bold;
+        padding: 0.5rem 5rem 0.5rem 5rem;
+        text-decoration: none;
+    }
+    #btn3:hover {
+        color: gray;
+        text-decoration: underline;
+    }
+    #btn4:hover {
+        color: gray;
+        text-decoration: underline;
     }
 }
 
-/*bigscreen*/
+/*bigscreen----cards*/
 
 @media screen and (min-width: 800px) {
     #section_2 {
@@ -223,8 +268,15 @@ body {
         height: 500rem; */
         /* margin-top: 1rem; */
         display: grid;
-        grid-template-columns: 35rem 35rem 35rem;
+        grid-template-columns: 40rem 40rem 40rem;
         grid-template-rows: 40rem;
+        margin-left: 2rem;
+    }
+    .content-titel2 {
+        color: #011827;
+        width: 120rem;
+        height: 10rem;
+        margin-left: 8rem;
     }
     #card_img {
         width: 30rem;
@@ -241,6 +293,7 @@ body {
         width: 35rem;
         height: 40rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-left: 1rem;
     }
     #card_btn {
         color: #FFFFFF;
@@ -272,7 +325,7 @@ body {
     }
 }
 
-/*stor skärm*/
+/*stor skärm---footer*/
 
 @media screen and (min-width: 800px) {
     .footer {
@@ -323,6 +376,37 @@ body {
         text-decoration: underline;
     }
     #online_btn:hover {
+        color: gray;
+        text-decoration: underline;
+    }
+    #online_btn2 {
+        color: #FFFFFF;
+        background-color: #E3170A;
+        margin-left: 35rem;
+        margin-top: -25rem;
+        font-size: 4rem;
+        font-weight: bold;
+        padding: 0.5rem 5rem 0.5rem 5rem;
+        text-decoration: none;
+    }
+    a {
+        color: #FFFFFF;
+    }
+    #onsite_btn2 {
+        color: #011827;
+        background: #8ACFE5;
+        margin-left: 83rem;
+        margin-top: -21rem;
+        font-size: 4rem;
+        font-weight: bold;
+        padding: 1rem 7rem 1rem 7rem;
+        text-decoration: none;
+    }
+    #onsite_btn2:hover {
+        color: gray;
+        text-decoration: underline;
+    }
+    #online_btn2:hover {
         color: gray;
         text-decoration: underline;
     }
@@ -493,6 +577,9 @@ body {
         width: 35rem;
         height: 7rem;
         margin-left: 8rem;
+    }
+    .content-titel2 {
+        display: none;
     }
     * {
         box-sizing: border-box;
