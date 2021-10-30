@@ -194,9 +194,9 @@ body {
         display: grid;
         grid-template-columns: repeat (2 1fr);
         grid-template-rows: repeat( 2 1fr);
-        /* align-items: stretch; */
         padding: 80px;
         margin-top: -8rem;
+        margin-bottom: 15rem;
     }
     .img_girl {
         grid-column: 0/1;
@@ -208,32 +208,43 @@ body {
     .text_1 {
         grid-column: 3/6;
         grid-row: 0/3;
-        width: 80rem;
-        height: 60rem;
-        font-size: 4rem;
+        width: 60rem;
+        height: 50rem;
+        font-size: 3rem;
+        padding-top: 2rem;
+        margin-right: 15rem;
+    }
+    #larger_text {
+        font-size: 5rem;
+        text-align: left;
     }
     .text_2 {
         grid-column: 0/3;
         grid-row: 3/6;
-        width: 80rem;
-        height: 60rem;
-        font-size: 4rem;
+        width: 60rem;
+        height: 50rem;
+        font-size: 3rem;
+        padding-top: 2rem;
+        margin-right: 15rem;
+    }
+    #larger_text2 {
+        font-size: 5rem;
+        text-align: left;
     }
     .img_hacked {
         grid-column: 2/7;
         grid-row: 2/7;
         width: 80rem;
         height: 60rem;
-        margin-left: -9rem;
+        margin-left: -5rem;
     }
     #btn3 {
         color: #FFFFFF;
         background-color: #E3170A;
         margin-top: 5rem;
-        margin-left: 25rem;
         font-size: 3rem;
         font-weight: bold;
-        padding: 0.5rem 5rem 0.5rem 5rem;
+        padding: 1rem 5rem 1rem 5rem;
         text-decoration: none;
         border-radius: 4px;
     }
@@ -243,7 +254,6 @@ body {
     #btn4 {
         color: #FFFFFF;
         background-color: #E3170A;
-        margin-left: 15rem;
         margin-top: 2rem;
         font-size: 3rem;
         font-weight: bold;
@@ -278,50 +288,62 @@ body {
         color: #011827;
         width: 120rem;
         height: 10rem;
-        margin-left: 8rem;
+        margin-left: 20rem;
+        margin-bottom: 10rem;
+        font-weight: lighter;
     }
     #card_img {
-        width: 30rem;
-        margin-left: 2.5rem;
+        width: 35rem;
         height: 20rem;
         /* transition: 0.3s; */
-        border-radius: 5px;
         align-items: stretch;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
     .card1 {
         grid-column: 1;
         grid-row: 1;
-        align-items: stretch;
         width: 35rem;
-        height: 40rem;
+        height: 42rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        margin-left: 1rem;
+        margin-left: 25rem;
+        border-radius: 5px;
     }
     #card_btn {
         color: #FFFFFF;
         background-color: #E3170A;
-        margin-left: 17rem;
-        padding: 0 2rem 0 2rem;
+        margin-left: 18rem;
+        padding: 0.5rem 2rem 0.5rem 2rem;
         text-decoration: none;
         border-radius: 4px;
     }
     #card_text {
-        width: 35rem;
+        width: 30rem;
         font-size: 1.5rem;
+        text-align: left;
     }
     .card2 {
         grid-column: 2;
         grid-row: 1;
         width: 35rem;
+        height: 42rem;
         font-size: 1.5rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-left: 25rem;
+        border-radius: 5px;
     }
     .card3 {
         grid-column: 3;
         grid-row: 1;
         width: 35rem;
+        height: 42rem;
         font-size: 1.5rem;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin-left: 25rem;
+        border-radius: 5px;
+    }
+    #star {
+        margin-right: 10rem;
     }
     .carousel {
         display: none;
@@ -332,11 +354,11 @@ body {
 
 @media screen and (min-width: 800px) {
     .footer {
-        font-size: 25px;
         color: #FFFFFF;
         background-color: #011827;
         clear: both;
         padding-top: 50px;
+        padding-bottom: 60rem;
         height: 500px;
         width: 160rem;
     }
@@ -345,6 +367,35 @@ body {
         float: left;
         width: 33.33%;
         padding: 1rem;
+        padding-left: 3rem;
+        font-size: 2rem;
+        padding-top: 20rem;
+    }
+    .other_boxes {
+        padding-right: 35rem;
+        font-size: 2rem;
+        width: 70rem;
+        height: 15rem;
+        float: right;
+    }
+    .last_box {
+        padding-left: 30rem;
+        width: 65rem;
+        height: 30rem;
+    }
+    #site_map {
+        font-size: 3rem;
+        width: 20rem;
+    }
+    .the_site {
+        width: 20rem;
+    }
+    #esc {
+        font-size: 3rem;
+    }
+    #follow_us {
+        font-size: 3rem;
+        width: 20rem;
     }
 }
 
@@ -356,6 +407,7 @@ body {
         color: #FFFFFF;
         width: 160rem;
         height: 45rem;
+        margin-top: 30rem;
     }
     #text-box {
         width: 50rem;
@@ -369,7 +421,7 @@ body {
         background-color: #011827;
         border: solid #8ACFE5;
         padding: 1rem 3rem 1rem 3rem;
-        margin-top: 3rem;
+        margin-top: 10rem;
         margin-left: 70rem;
         font-weight: bold;
         font-size: 2rem;
@@ -386,7 +438,7 @@ body {
         color: #FFFFFF;
         background-color: #E3170A;
         margin-left: 35rem;
-        margin-top: -25rem;
+        margin-top: -55rem;
         font-size: 4rem;
         font-weight: bold;
         padding: 0.5rem 5rem 0.5rem 5rem;
@@ -400,7 +452,7 @@ body {
         color: #011827;
         background: #8ACFE5;
         margin-left: 83rem;
-        margin-top: -21rem;
+        margin-top: -51rem;
         font-size: 4rem;
         font-weight: bold;
         padding: 1rem 7rem 1rem 7rem;
