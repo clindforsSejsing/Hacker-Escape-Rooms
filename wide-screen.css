@@ -235,6 +235,7 @@ body {
         font-weight: bold;
         padding: 0.5rem 5rem 0.5rem 5rem;
         text-decoration: none;
+        border-radius: 4px;
     }
     a {
         color: #FFFFFF;
@@ -248,6 +249,7 @@ body {
         font-weight: bold;
         padding: 0.5rem 5rem 0.5rem 5rem;
         text-decoration: none;
+        border-radius: 4px;
     }
     #btn3:hover {
         color: gray;
@@ -301,6 +303,7 @@ body {
         margin-left: 17rem;
         padding: 0 2rem 0 2rem;
         text-decoration: none;
+        border-radius: 4px;
     }
     #card_text {
         width: 35rem;
@@ -388,6 +391,7 @@ body {
         font-weight: bold;
         padding: 0.5rem 5rem 0.5rem 5rem;
         text-decoration: none;
+        border-radius: 4px;
     }
     a {
         color: #FFFFFF;
@@ -401,6 +405,7 @@ body {
         font-weight: bold;
         padding: 1rem 7rem 1rem 7rem;
         text-decoration: none;
+        border-radius: 4px;
     }
     #onsite_btn2:hover {
         color: gray;
@@ -491,7 +496,13 @@ body {
     ul.menu-bar {
         display: none;
     }
-    .card1 .card2 .card3 {
+    .card1 {
+        display: none;
+    }
+    .card2 {
+        display: none;
+    }
+    .card3 {
         display: none;
     }
 }
@@ -546,15 +557,145 @@ body {
         clear: both;
         padding-top: 50px;
         height: 25;
-        width: 37rem;
-    }
-    .footer h3 {
-        font-weight: bold;
+        width: 80rem;
     }
     .boxes {
         padding: 20px;
-        /* text-indent: 8px; */
     }
+    .boxes p {
+        font-size: 2rem;
+        text-align: left;
+    }
+    #page {
+        text-align: left;
+        width: 53rem;
+        margin-bottom: -1rem;
+    }
+}
+
+/*section 3*/
+
+@media screen and (max-width: 800px) {
+    #onsite_btn2 {
+        color: #011827;
+        background: #8ACFE5;
+        margin-left: 27rem;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1rem 5rem 1rem 5rem;
+        border-radius: 4px;
+    }
+    #online_btn2 {
+        background-color: #FFFFFF;
+        color: #36769D;
+        font-weight: bold;
+        margin-left: 32rem;
+        text-decoration: underline;
+        border-radius: 4px;
+    }
+    #online_btn {
+        background-color: #FFFFFF;
+    }
+    #text-box {
+        color: #ffffff;
+        width: 30rem;
+        height: 20rem;
+        font-size: 2rem;
+        margin-left: 25rem;
+        text-align: center;
+        font-weight: lighter;
+        padding-bottom: 20rem;
+    }
+    #read_story {
+        background-color: #011827;
+        color: #8ACFE5;
+        margin-left: 27rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        padding: 1.5rem 6rem 1.5rem 6rem;
+        border: solid 2px #8ACFE5;
+        border-radius: 4px;
+    }
+    .black_box {
+        width: 80rem;
+        background-color: #011827;
+        margin-top: 3rem;
+        padding-top: 6rem;
+        height: 40rem;
+        padding-bottom: 6rem;
+    }
+}
+
+/*section 4 -Mobile*/
+
+@media screen and (max-width: 800px) {
+    #section_4 {
+        width: 80rem;
+    }
+    .img_girl {
+        width: 80rem;
+        height: 50rem;
+        object-fit: fill;
+    }
+    .text_1 {
+        font-size: 3rem;
+        margin-left: 2rem;
+        width: 70rem;
+    }
+    .text_1 h2 {
+        font-weight: bold;
+        margin-top: 4rem;
+        font-size: 5rem;
+        font-stretch: expanded;
+        letter-spacing: 1px;
+        padding-bottom: 2rem;
+    }
+    #btn3 {
+        color: #FFFFFF;
+        background-color: #E3170A;
+        font-size: 2.5rem;
+        padding: 2rem 11rem 2rem 11rem;
+        text-decoration: none;
+        border-radius: 6px;
+        margin-top: 4rem;
+        margin-bottom: 7rem;
+    }
+    .img_hacked {
+        /*making the picture responsive. 100 procent av storlek max-width: 100%;
+        height: auto; */
+        width: 80rem;
+        height: 50rem;
+        object-fit: fill;
+    }
+    .text_2 {
+        font-size: 3rem;
+        margin-left: 2rem;
+        width: 70rem;
+    }
+    .text_2 h2 {
+        font-weight: bold;
+        margin-top: 4rem;
+        font-size: 5rem;
+        font-stretch: expanded;
+        letter-spacing: 1px;
+        padding-bottom: 2rem;
+    }
+}
+
+#btn4 {
+    color: #FFFFFF;
+    background-color: #E3170A;
+    font-size: 2.5rem;
+    padding: 2rem 11rem 2rem 11rem;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
+}
+
 }
 
 /*mobils carousel------------------------------------------------*/
@@ -638,6 +779,7 @@ body {
         float: right;
         font-size: 1.5rem;
         margin-top: 1rem;
+        border-radius: 4px;
     }
     .carousel__viewport {
         position: absolute;
