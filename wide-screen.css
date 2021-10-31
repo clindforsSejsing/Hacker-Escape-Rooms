@@ -1,18 +1,8 @@
 @import 'main.sass/main.scss';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-/*Big screen*/
-
-@media screen and (min-width: 800px) {}
-
-/*Smaller screen*/
-
-@media screen and (max-width: 800px) {}
-
-/*Mobile screen*/
-
-@media screen and (max-width: 450px) {}
-
-/*-------------------------------------*/
+/*Big screen(min-width: 800px),
+Smaller screen(max-width: 800px),
+Mobile screen(max-width: 450px). A responsive site for company Hacker Escape Rooms by author@CLS*/
 
 body {
     background-color: #FFFFFF;
@@ -1469,7 +1459,6 @@ body {
 
 @media screen and (max-width: 800px) {
     .footer {
-        font-size: 1.5rem;
         color: #FFFFFF;
         background-color: #011827;
         clear: both;
@@ -1478,7 +1467,10 @@ body {
         width: 80rem;
     }
     .boxes {
-        padding: 20px;
+        padding-top: 2.5rem;
+        padding-left: 5rem;
+        padding-bottom: 5rem;
+        /* padding: 20px; */
     }
     .boxes p {
         font-size: 2rem;
@@ -1489,11 +1481,37 @@ body {
         width: 53rem;
         margin-bottom: -1rem;
     }
+    .first__box {
+        font-size: 1rem;
+    }
+    #esc {
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+    .the_site {
+        font-size: 1rem;
+    }
+    #site_map {
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+    .last_box {
+        font-size: 0.5rem;
+    }
+    #follow_us {
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+    .other_boxes {
+        padding: 0px 10px 10px 10px;
+        margin-left: -1rem;
+        margin-top: -3rem;
+    }
 }
 
 /*Mobile screen (footer, boxes)*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 450px) {
     .footer {
         color: #FFFFFF;
         background-color: #011827;
@@ -1522,7 +1540,7 @@ body {
     }
     #esc {
         font-size: 1.3rem;
-        margin-top: 1rem;
+        padding-bottom: 1rem;
     }
     .the_site {
         font-size: 1rem;
