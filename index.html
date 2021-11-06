@@ -10,23 +10,35 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>ECS Hacker Escape Rooms</title>
+
 </head>
 
 <body>
     <header>
+        <div id="open_btn"><button class="openbtn" onclick="openNav()">☰</button></div>
         <div class=" container-fluid">
             <img class="logo" src="images/logo.png">
             <h1> Hacker Escape Rooms</h1>
         </div>
     </header>
-    <nav class="navbar">
-        <ul class="menu-bar">
+    <div id="myNavbar" role="menu" class="navbar">
+        <ul class="dropdown_menu" role="menu" aria-labelledby="menu1">
+        </ul>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="close_btn">×</a>
+        <li role="menuitem"><a href="#">Play online</a></li>
+        <li role="menuitem"><a href="#">Play on-site</a></li>
+        <li role="menuitem"><a href="#">The story</a></li>
+        <li role="menuitem"><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="navbar_1">
+        <ul class="menu_bar">
             <li>Play online</li>
             <li>Play on-site</li>
             <li>The Story</li>
             <li id="other-color">Contact us</li>
         </ul>
-    </nav>
+    </div>
     <!-- hero-picture-->
     <div class="hero">
         <div class="view overlay rounded-top">
@@ -46,14 +58,17 @@
                 <div class="quote1_cite">
                     <blockquote class="first_quote">
                         This is a quote about how amazing this place is and how much fun me
-                        and my friends had when we tried it <br><cite>Johanna Doe, visited us in September 2021</cite>
+                        and my friends had when we tried it <br><cite>Johanna Doe, visited us in September
+                            2021</cite>
                     </blockquote>
                 </div>
             </div>
             <div class="quote2">
                 <img class="img-cirkel_2" src="images\happy3.2.png" alt="quote">
-                <blockquote class="second_quote">This is a quote about how amazing this place is and how much fun me and
-                    my friends had when we tried it<br><cite>Max Power, visited us in September 2021</cite></blockquote>
+                <blockquote class="second_quote">This is a quote about how amazing this place is and how much fun me
+                    and
+                    my friends had when we tried it<br><cite>Max Power, visited us in September 2021</cite>
+                </blockquote>
             </div>
         </section>
         <h1 class="content-titel2">Popular challenges right now</h1>
@@ -184,6 +199,7 @@
             </div>
         </section>
     </main>
+    <script src="app.js"></script>
 </body>
 <!--footer with boxes-->
 <Footer class="footer">

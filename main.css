@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-/*Big screen(min-width: 800px),
-Smaller screen(max-width: 800px),
-Mobile screen(max-width: 450px). A responsive site for company Hacker Escape Rooms by author@CLS*/
+/*Large screen(min-width: 800px),
+Medium screen(max-width: 800px),
+Small screen(max-width: 450px). A responsive site for company Hacker Escape Rooms by author@CLS*/
 
 body {
     background-color: #FFFFFF;
@@ -14,7 +14,7 @@ body {
 
 /*-----------------*/
 
-/*Big screen (header, h1, logo, hero, img)*/
+/*Large screen (header, h1, logo, hero, img, navbar)*/
 
 @media screen and (min-width: 800px) {
     header {
@@ -54,14 +54,54 @@ body {
     .img_0 {
         border-top: none;
         height: 70rem;
-        margin-top: none;
+        margin-top: -16rem;
         width: 160rem;
+    }
+    div.navbar_1 {
+        background-color: #011827;
+    }
+    nav.navbar_1 {
+        background-color: #011827;
+        color: #FFFFFF;
+        height: 1rem;
+        margin-bottom: -1rem;
+        margin-top: -1rem;
+        padding-left: 16rem;
+        width: 160rem;
+    }
+    ul.menu_bar {
+        background-color: #011827;
+        border: 0;
+        color: #FFFFFF;
+        display: flex;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 1rem;
+        list-style-type: none;
+        margin: 0 20rem 16rem 32rem;
+        padding: 2rem;
+    }
+    .menu_bar li {
+        font-size: 3rem;
+        font-weight: bold;
+        padding-left: 5rem;
+    }
+    .menu_bar li#other-color {
+        background-color: #011827;
+        color: #8ACFE5;
+    }
+    #myNavbar {
+        display: none;
+    }
+    div#open_btn {
+        display: none;
     }
 }
 
-/*Small screen (header, h1, logo, hero, img) */
+/*Medium screen (header, h1, logo, hero, img, navbar) */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (min-width: 450px) {
     header {
         background-color: #011827;
         display: block;
@@ -102,28 +142,108 @@ body {
         margin-top: none;
         width: 80rem;
     }
+    .navbar {
+        background-color: #011827;
+        border: 0;
+        display: none;
+        margin-bottom: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: relative;
+        top: -14rem;
+        transition: 0.01s;
+        z-index: 2;
+        animation: menu_fade 0.7s;
+    }
+    .navbar a {
+        color: #FFFFFF;
+        display: inline-block;
+        font-size: 2.5rem;
+        height: 11rem;
+        margin-left: 2rem;
+        margin-top: 8rem;
+        text-align: center;
+        text-decoration: none;
+        transition: 0.1s;
+        width: 15rem;
+    }
+    .navbar li {
+        height: 5rem;
+        margin-left: 24rem;
+        margin-top: 6rem;
+        padding: 3rem;
+        position: relative;
+        width: 65rem;
+    }
+    .navbar a:hover {
+        color: #b6bdb5;
+    }
+    a.closebtn {
+        font-size: 10rem;
+        float: left;
+        margin-bottom: 1rem;
+        margin-left: 65rem;
+        margin-top: -6rem;
+        right: 10rem;
+        top: -2rem;
+    }
+    div#open_btn {
+        height: 1rem;
+    }
+    button.openbtn {
+        font-size: 7rem;
+        margin-top: 4rem;
+        margin-left: 67rem;
+    }
+    .openbtn {
+        background-color: #011827;
+        border: none;
+        color: white;
+        font-size: 50px;
+        margin-left: 35rem;
+    }
+    .openbtn:hover {
+        background-color: #b6bdb5;
+    }
+    .open_btn a {
+        padding: 7px;
+        transition: margin-top 0s;
+    }
+    @keyframes menu_fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 }
 
-/*Mobile screen (header, h1, logo, hero, img)*/
+/*Small screen (header, h1, logo, hero, img)*/
 
 @media screen and (max-width: 450px) {
     header {
         background-color: #011827;
         display: block;
-        height: 13rem;
+        height: 14rem;
         line-height: 1rem;
         margin-bottom: 0;
         width: 45rem;
+        z-index: 1;
     }
-    h1 {
+    header h1 {
+        background-color: #011827;
         color: #FFFFFF;
-        display: block;
+        display: column;
+        float: left;
         font-size: 2.5rem;
         font-style: normal;
-        margin-left: 15rem;
+        height: 2rem;
+        margin-left: -rem;
         margin-top: 2.5rem;
         position: relative;
-        width: 10rem;
+        width: 2rem;
+        z-index: 1;
     }
     .logo {
         float: left;
@@ -132,7 +252,9 @@ body {
         margin-bottom: 1rem;
         margin-right: 1rem;
         padding: 1rem 1rem 0rem 0, 5rem;
+        position: relative;
         width: 14rem;
+        z-index: 1;
     }
     .hero {
         background-color: #FFFFFF;
@@ -140,47 +262,100 @@ body {
         margin-top: -1rem;
         top: 216px;
         width: 45rem;
+        z-index: 1;
     }
     .img_0 {
         border-top: none;
         height: 20rem;
         margin-top: none;
+        position: relative;
         width: 45rem;
+        z-index: 1;
+    }
+    main {
+        z-index: 1;
+    }
+    .navbar {
+        background-color: #011827;
+        border: 0;
+        display: none;
+        height: 50rem;
+        margin-bottom: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: relative;
+        top: -13rem;
+        transition: 0.01s;
+        width: 35rem;
+        z-index: 2;
+        animation: menu_fade 0.7s;
+    }
+    .navbar a {
+        color: #FFFFFF;
+        display: inline-block;
+        font-size: 2.5rem;
+        height: 11rem;
+        margin-left: 2rem;
+        margin-top: 8rem;
+        text-align: center;
+        text-decoration: none;
+        transition: 0.1s;
+        width: 15rem;
+    }
+    .navbar li {
+        height: 5rem;
+        margin-left: 6rem;
+        margin-top: 6rem;
+        padding: 3rem;
+        position: relative;
+        width: 65rem;
+    }
+    .navbar a:hover {
+        color: #b6bdb5;
+    }
+    a.closebtn {
+        font-size: 10rem;
+        float: left;
+        margin-bottom: 1rem;
+        margin-left: 25rem;
+        margin-top: -6rem;
+        right: 10rem;
+        top: -2rem;
+    }
+    div#open_btn {
+        height: 1rem;
+    }
+    button.openbtn {
+        margin-top: 3rem;
+        margin-left: 30rem;
+    }
+    .openbtn {
+        background-color: #011827;
+        border: none;
+        color: white;
+        font-size: 50px;
+        margin-left: 35rem;
+    }
+    .openbtn:hover {
+        background-color: #b6bdb5;
+    }
+    .open_btn a {
+        padding: 7px;
+        transition: margin-top 0s;
+    }
+    @keyframes menu_fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 }
 
-/*Big screen (nav bar, li-items, btn´s, main)*/
+/*Large screen ( btn´s, main)*/
 
 @media screen and (min-width: 800px) {
-    .navbar {
-        background-color: #011827;
-        color: #FFFFFF;
-        height: 1rem;
-        margin-bottom: -1rem;
-        margin-top: -1rem;
-        padding-left: 16rem;
-        width: 160rem;
-    }
-    ul.menu-bar {
-        border: 0;
-        color: #FFFFFF;
-        display: flex;
-        font-size: 3rem;
-        font-style: normal;
-        font-weight: bold;
-        line-height: 1rem;
-        list-style-type: none;
-        margin: 0 20rem 16rem 18rem;
-        padding: 0;
-    }
-    ul li {
-        font-size: 3rem;
-        font-weight: bold;
-        padding-left: 6rem;
-    }
-    ul li#other-color {
-        color: #8ACFE5;
-    }
     #online_btn {
         background-color: #E3170A;
         color: #FFFFFF;
@@ -220,9 +395,9 @@ body {
     }
 }
 
-/*Smaller screen (btn´s, main)*/
+/*Medium screen (btn´s, main)*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px)and (min-width: 450px) {
     #onsite_btn {
         background: #8ACFE5;
         color: #011827;
@@ -242,19 +417,19 @@ body {
     #online_btn {
         background-color: #FFFFFF;
     }
-    main {
+    #open_btn {
         margin-right: 20rem;
         width: 50rem;
     }
 }
 
-/* remove navbar and cards in smaller-version*/
+/* remove navbar and cards in Medium-version*/
 
-@media screen and (max-width: 800px) {
-    .navbar {
+@media screen and (max-width: 800px)and (min-width: 450px) {
+    .navbar_1 {
         display: none;
     }
-    ul.menu-bar {
+    ul.menu_bar {
         display: none;
     }
     .card1 {
@@ -268,7 +443,7 @@ body {
     }
 }
 
-/*Mobile screen(btn´s, main)*/
+/*Small screen(btn´s, main)*/
 
 @media screen and (max-width: 450px) {
     #onsite_btn {
@@ -296,13 +471,13 @@ body {
     }
 }
 
-/* remove navbar and cards in mobile-version*/
+/* remove navbar and cards in Small screen*/
 
 @media screen and (max-width: 450px) {
-    .navbar {
+    .navbar_1 {
         display: none;
     }
-    ul.menu-bar {
+    ul.menu_bar {
         display: none;
     }
     .card1 {
@@ -316,7 +491,7 @@ body {
     }
 }
 
-/*Big screen (section 1, quote part) */
+/*Large screen (section 1, quote part) */
 
 @media screen and (min-width: 800px) {
     #section_1 {
@@ -368,9 +543,9 @@ body {
     }
 }
 
-/*Small screen (section 1, quote part)*/
+/*Medium screen (section 1, quote part)*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px)and (min-width: 450px) {
     #section_1 {
         background-color: #FFFFFF;
         height: 15rem;
@@ -404,7 +579,7 @@ body {
     }
 }
 
-/*Mobile screen (section 1, quote part)*/
+/*Small screen (section 1, quote part)*/
 
 @media screen and (max-width: 450px) {
     #section_1 {
@@ -437,12 +612,12 @@ body {
         font-size: 0.7rem;
         font-style: italic;
     }
-    blockquote.quote2 {
+    .quote2 {
         display: none;
     }
 }
 
-/*Bigscreen (cards, btn´s, removal of carousel)*/
+/*Large screen (cards, btn´s, removal of carousel)*/
 
 @media screen and (min-width: 800px) {
     #section_2 {
@@ -520,9 +695,9 @@ body {
     }
 }
 
-/*smallscreen (carousel)*/
+/*Medium screen (carousel)*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px)and (min-width: 450px) {
     #section_2 {
         margin-bottom: 0;
         margin-left: 15rem;
@@ -548,7 +723,7 @@ body {
         margin-top: 2rem;
         width: 40rem;
     }
-    /*remove other headline, displayed in desc-version*/
+    /*remove other headline, displayed in Large screen*/
     .content-titel2 {
         display: none;
     }
@@ -760,7 +935,7 @@ body {
     }
 }
 
-/*Mobilescreen (carousel)*/
+/*Small screen (carousel)*/
 
 @media screen and (max-width: 450px) {
     #section_2 {
@@ -1005,7 +1180,7 @@ body {
     }
 }
 
-/*Big screen (section 3, btn´s, text-area)*/
+/*Large screen (section 3, btn´s, text-area)*/
 
 @media screen and (min-width: 800px) {
     #section_3 {
@@ -1075,9 +1250,9 @@ body {
     }
 }
 
-/*Small screen (section 3, btn´s, text-area)*/
+/*Medium screen (section 3, btn´s, text-area)*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (min-width: 450px) {
     #onsite_btn2 {
         background: #8ACFE5;
         border-radius: 4px;
@@ -1131,7 +1306,7 @@ body {
     }
 }
 
-/*Mobile screen (section 3, btn´s, text-area)*/
+/*Small screen (section 3, btn´s, text-area)*/
 
 @media screen and (max-width: 450px) {
     #section_3 {
@@ -1190,7 +1365,7 @@ body {
     }
 }
 
-/*Big screen (section 4, boxes img, btn´s)*/
+/*Large screen (section 4, boxes img, btn´s)*/
 
 @media screen and (min-width: 800px) {
     #section_4 {
@@ -1278,9 +1453,9 @@ body {
     }
 }
 
-/*Small screen (section 4, boxes, img)*/
+/*Medium screen (section 4, boxes, img)*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px)and (min-width: 450px) {
     #section_4 {
         width: 80rem;
     }
@@ -1342,7 +1517,7 @@ body {
     }
 }
 
-/*Mobile screen (section 4, boxes, img)*/
+/*Small screen (section 4, boxes, img)*/
 
 @media screen and (max-width: 450px) {
     #section_4 {
@@ -1404,7 +1579,7 @@ body {
     }
 }
 
-/*Big screen (footer)*/
+/*Large screen (footer)*/
 
 @media screen and (min-width: 800px) {
     .footer {
@@ -1453,9 +1628,9 @@ body {
     }
 }
 
-/*Small screen (footer, boxes)*/
+/*Medium screen (footer, boxes)*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px)and (min-width: 450px) {
     .footer {
         background-color: #011827;
         clear: both;
@@ -1506,7 +1681,7 @@ body {
     }
 }
 
-/*Mobile screen (footer, boxes)*/
+/*Small screen (footer, boxes)*/
 
 @media screen and (max-width: 450px) {
     .footer {
