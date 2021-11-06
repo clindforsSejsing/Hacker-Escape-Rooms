@@ -179,13 +179,12 @@ body {
         color: #b6bdb5;
     }
     a.closebtn {
+        color: #FFFFFF;
         font-size: 10rem;
         float: left;
-        margin-bottom: 1rem;
-        margin-left: 65rem;
-        margin-top: -6rem;
-        right: 10rem;
-        top: -2rem;
+        margin-bottom: -6rem;
+        margin-left: 62rem;
+        margin-top: 2.5rem;
     }
     div#open_btn {
         height: 1rem;
@@ -296,31 +295,36 @@ body {
         font-size: 2.5rem;
         height: 11rem;
         margin-left: 2rem;
-        margin-top: 8rem;
+        margin-top: 1rem;
         text-align: center;
         text-decoration: none;
         transition: 0.1s;
         width: 15rem;
     }
     .navbar li {
-        height: 5rem;
+        height: 3rem;
         margin-left: 6rem;
-        margin-top: 6rem;
-        padding: 3rem;
+        margin-top: 9rem;
+        padding: 1rem;
+        padding-bottom: 1rem;
         position: relative;
         width: 65rem;
     }
     .navbar a:hover {
         color: #b6bdb5;
     }
+    .navbar a:first-child {
+        margin-right: 15rem;
+        margin-bottom: 1rem;
+    }
+    .navbar li:nth-child(3) {
+        margin-top: 12rem;
+    }
     a.closebtn {
         font-size: 10rem;
         float: left;
-        margin-bottom: 1rem;
-        margin-left: 25rem;
-        margin-top: -6rem;
-        right: 10rem;
-        top: -2rem;
+        margin-left: 23.5rem;
+        margin-top: 2rem;
     }
     div#open_btn {
         height: 1rem;
