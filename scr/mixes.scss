@@ -1,0 +1,42 @@
+$wide-screen-breakpoint: 800px;
+$small-screen-breakpoint: 450px;
+
+$font-stack: Roboto, sans-serif;
+$primary-color: #011827;
+$secondary-color: #FFFFFF; 
+
+
+
+@keyframes menu_fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@mixin hideItems{
+    .navbar_1 {
+        display: none;
+    }
+    ul.menu_bar {
+        display: none;
+    }
+    .card1 {
+        display: none;
+    }
+    .card2 {
+        display: none;
+    }
+    .card3 {
+        display: none;
+    }
+}
+@mixin sizesmall{
+    font-size: 1rem;
+}
+@mixin otherBoxesStyle{
+    margin-left: -1rem;
+    margin-top: -3rem;
+    padding: 0px 10px 10px 10px;
+}

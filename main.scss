@@ -1,0 +1,1623 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import 'scr/mixes.scss';
+@import 'scr/carousel.scss';
+
+
+body {
+    background-color: $secondary-color;
+    width: 500rem;
+}
+
+* {
+    font-family: $font-stack;
+}
+@media screen and (min-width: $wide-screen-breakpoint) {
+    header {
+        background-color: $primary-color;
+        border: 0;
+        font-size: 10rem;
+        height: 30rem;
+        line-height: 1rem;
+        margin-bottom: 0;
+        margin-top: 0;
+        text-align: left;
+        width: 160rem;
+    
+
+     h1 {
+        color: $secondary-color;
+        font-size: 6rem;
+        font-style: normal;
+        font-weight: bold;
+        margin-top: 11rem;
+        padding-left: 25rem;
+        width: 500rem;
+     }
+    }
+
+    .logo {
+        float: left;
+        height: 20rem;
+        padding-left: 3rem;
+        padding-right: 2rem;
+        padding-top: 4rem;
+        width: 30rem;
+    }
+
+    .hero {
+        background-color: $primary-color;
+        height: 60rem;
+        top: 216px;
+        width: 160rem;
+    }
+
+    .img_0 {
+        border-top: none;
+        height: 70rem;
+        margin-top: -16rem;
+        width: 160rem;
+    }
+    .navbar_1{
+     div {
+        background-color: $primary-color;
+        }
+
+        nav{
+        background-color: $primary-color;
+        color: $secondary-color;
+        height: 1rem;
+        margin-bottom: -1rem;
+        margin-top: -1rem;
+        padding-left: 16rem;
+        width: 160rem;
+        }
+    }
+
+    .menu_bar{
+        ul {
+        background-color: $primary-color;
+        border: 0;
+        color: $secondary-color;
+        display: flex;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 1rem;
+        list-style-type: none;
+        margin: 0 20rem 16rem 32rem;
+        padding: 2rem;
+        }
+
+        li {
+        font-size: 3rem;
+        font-weight: bold;
+        padding-left: 5rem;
+         }
+
+        li#other-color {
+        background-color: $primary-color;
+        color: #8ACFE5;
+        }
+    }
+
+
+    #myNavbar {
+        display: none;
+    }
+
+    div#open_btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $wide-screen-breakpoint) and (min-width: $small-screen-breakpoint) {
+    header {
+        background-color: $primary-color;;
+        display: block;
+        height: 15rem;
+        line-height: 1rem;
+        margin-bottom: 0;
+        width: 80rem;
+    
+        h1 {
+        color: $secondary-color;
+        display: block;
+        font-size: 2.5rem;
+        font-style: normal;
+        margin-left: 15rem;
+        margin-top: 2.5rem;
+        position: relative;
+        width: 10rem;
+        }
+    }
+
+    .logo {
+        float: left;
+        height: 9rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        margin-top: 2rem;
+        padding: 1rem 1rem 0rem 0, 5rem;
+        width: 14rem;
+    }
+
+    .hero {
+        background-color: $secondary-color;
+        height: 40rem;
+        margin-top: -1rem;
+        top: 216px;
+        width: 95rem;
+    }
+
+    .img_0 {
+        border-top: none;
+        height: 35rem;
+        margin-top: none;
+        width: 80rem;
+    }
+
+    .navbar {
+        background-color: $primary-color;;
+        border: 0;
+        display: none;
+        margin-bottom: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: relative;
+        top: -14rem;
+        transition: 0.01s;
+        z-index: 2;
+        animation: menu_fade 0.7s;
+    
+        a {
+        color: $secondary-color;
+        display: inline-block;
+        font-size: 2.5rem;
+        height: 11rem;
+        margin-left: 2rem;
+        margin-top: 8rem;
+        text-align: center;
+        text-decoration: none;
+        transition: 0.1s;
+        width: 15rem;
+        }
+
+        li {
+        height: 5rem;
+        margin-left: 24rem;
+        margin-top: 6rem;
+        padding: 3rem;
+        position: relative;
+        width: 65rem;
+        }
+
+        a:hover {
+        color: #b6bdb5;
+        }
+
+        a.closebtn {
+        color: $secondary-color;
+        font-size: 10rem;
+        float: left;
+        margin-bottom: -6rem;
+        margin-left: 62rem;
+        margin-top: 2.5rem;
+        }
+    }
+
+    div#open_btn {
+        height: 1rem;
+    
+        a {
+        padding: 7px;
+        transition: margin-top 0s;
+        }
+    }
+
+    .openbtn {
+        background-color: $primary-color;;
+        border: none;
+        color: white;
+        font-size: 50px;
+        margin-left: 35rem;
+    
+        button{
+        font-size: 7rem;
+        margin-top: 4rem;
+        margin-left: 67rem;
+        }
+
+        .openbtn:hover {
+        background-color: #b6bdb5;
+        }
+    }
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+    header {
+        background-color: $primary-color;;
+        display: block;
+        height: 14rem;
+        line-height: 1rem;
+        margin-bottom: 0;
+        width: 45rem;
+        z-index: 1;
+        h1 {
+        background-color: $primary-color;;
+        color: $secondary-color;
+        display: column;
+        float: left;
+        font-size: 2.5rem;
+        font-style: normal;
+        height: 2rem;
+        margin-left: -rem;
+        margin-top: 2.5rem;
+        position: relative;
+        width: 2rem;
+        z-index: 1;
+        }
+    }
+
+    .logo {
+        float: left;
+        height: 9rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        padding: 1rem 1rem 0rem 0, 5rem;
+        position: relative;
+        width: 14rem;
+        z-index: 1;
+    }
+
+    .hero {
+        background-color: $secondary-color;
+        height: 40rem;
+        margin-top: -1rem;
+        top: 216px;
+        width: 45rem;
+        z-index: 1;
+    }
+
+    .img_0 {
+        border-top: none;
+        height: 20rem;
+        margin-top: none;
+        position: relative;
+        width: 45rem;
+        z-index: 1;
+    }
+
+    main {
+        z-index: 1;
+    }
+
+    .navbar {
+        background-color: $primary-color;;
+        border: 0;
+        display: none;
+        height: 50rem;
+        margin-bottom: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: relative;
+        top: -13rem;
+        transition: 0.01s;
+        width: 35rem;
+        z-index: 2;
+        animation: menu_fade 0.7s;
+        a {
+        color: $secondary-color;
+        display: inline-block;
+        font-size: 2.5rem;
+        height: 11rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        text-align: center;
+        text-decoration: none;
+        transition: 0.1s;
+        width: 15rem;
+        }
+        li {
+        height: 3rem;
+        margin-left: 6rem;
+        margin-top: 9rem;
+        padding: 1rem;
+        padding-bottom: 1rem;
+        position: relative;
+        width: 65rem;
+        }
+        a:hover {
+        color: #b6bdb5;
+        }
+         a:first-child {
+        margin-right: 15rem;
+        margin-bottom: 1rem;
+        }
+        li:nth-child(3) {
+        margin-top: 12rem;
+        }
+    }
+
+    div#open_btn {
+        height: 1rem;
+        a {
+            padding: 7px;
+            transition: margin-top 0s;
+        }
+    }
+    
+    .openbtn {
+        background-color: $primary-color;;
+        border: none;
+        color: white;
+        font-size: 50px;
+        margin-left: 35rem;
+
+        .openbtn:hover {
+        background-color: #b6bdb5;
+        }
+   
+        button {
+        margin-top: 3rem;
+        margin-left: 30rem;
+        }
+    }
+    a.closebtn {
+        font-size: 10rem;
+        float: left;
+        margin-left: 23.5rem;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: $wide-screen-breakpoint) {
+    #online_btn {
+        background-color: #E3170A;
+        color: $secondary-color;
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 3rem;
+        margin-left: 35rem;
+        margin-top: -13rem;
+        padding: 0.5rem 5rem 0.5rem 5rem;
+        text-decoration: none;
+    
+        a {
+        color: $secondary-color;
+        }
+        a:hover {
+            color: #b6bdb5;
+            text-decoration: underline;
+        }
+    }
+
+    #onsite_btn {
+        background: #8ACFE5;
+        color: $primary-color;;
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 3rem;
+        margin-left: 83rem;
+        margin-top: -4rem;
+        padding: 1rem 7rem 1rem 7rem;
+        text-decoration: none;
+        #onsite_btn:hover {
+        color: #b6bdb5;
+        text-decoration: underline;
+        }
+    }
+    main {
+        margin-top: 30rem;
+        width: 180rem;
+    }
+}
+
+@media screen and (max-width: $wide-screen-breakpoint)and (min-width: $small-screen-breakpoint) {
+    #onsite_btn {
+        background: #8ACFE5;
+        color: $primary-color;;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 3rem;
+        margin-left: 27rem;
+        margin-top: 4rem;
+        padding: 1rem 5rem 1rem 5rem;
+    }
+
+    #online {
+        background-color: $secondary-color;
+        color: #36769D;
+        margin-left: 32rem;
+        text-decoration: underline;
+    }
+
+    #online_btn {
+        background-color: $secondary-color;
+    }
+
+    #open_btn {
+        margin-right: 20rem;
+        width: 50rem;
+    }
+}
+
+@media screen and (max-width: $wide-screen-breakpoint)and (min-width: $small-screen-breakpoint) {
+    @include hideItems;
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+    #onsite_btn {
+        background: #8ACFE5;
+        color: $primary-color;;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        margin-left: 10rem;
+        margin-top: 4rem;
+        padding: 1rem 3rem 1rem 3rem;
+    }
+
+    #online {
+        background-color: $secondary-color;
+        color: #36769D;
+        font-size: 1rem;
+        margin-left: 12rem;
+        text-decoration: underline;
+    }
+
+    #online_btn {
+        background-color: $secondary-color;
+    }
+
+    main {
+        width: 30rem;
+    }
+}
+
+
+@media screen and (max-width: $small-screen-breakpoint) {
+ @include hideItems;
+}
+
+@media screen and (min-width: $wide-screen-breakpoint) {
+    #section_1 {
+        background-color: $secondary-color;
+        display: flex;
+        height: 30rem;
+        width: 160rem;
+    }
+
+    .quote1 {
+        color: $primary-color;;
+        font-style: italic;
+        height: 20rem;
+        margin-left: 7rem;
+        width: 70rem;
+    }
+
+    .img-cirkel_1 {
+        float: left;
+        height: 25rem;
+        margin-right: 2rem;
+        margin-top: -2rem;
+        width: 25rem;
+    }
+
+    .quote2 {
+        color: $primary-color;;
+        font-style: italic;
+        height: 20rem;
+        margin-left: 6rem;
+        width: 70rem;
+    }
+
+    .img-cirkel_2 {
+        float: left;
+        height: 25rem;
+        margin-right: 2rem;
+        margin-top: -2rem;
+        width: 25rem;
+    }
+
+    blockquote {
+        border: none !important;
+        font-size: 2.5rem;
+        first_quote{
+            width: 70rem;
+        }
+        second_quote{
+            width: 70rem; 
+        }   
+    }
+    cite {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: $wide-screen-breakpoint)and (min-width: $small-screen-breakpoint) {
+    #section_1 {
+        background-color: $secondary-color;
+        height: 15rem;
+        margin-left: 20rem;
+        margin-top: 10rem;
+        width: 10rem;
+    }
+
+    .quote1_cite {
+        background-color: $secondary-color;
+        font-size: 1rem;
+        font-style: italic;
+        margin-left: 11rem;
+        margin-top: -10rem;
+        width: 30rem;
+    }
+
+    .img-cirkel_1 {
+        background-color: $secondary-color;
+        height: 8rem;
+        margin-left: 2rem;
+        margin-top: 6rem;
+        width: 8rem;
+    }
+
+    blockquote {
+        border: none !important;
+    }
+
+    cite {
+        font-size: 1rem;
+    }
+
+    .quote2 {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: $small-screen-breakpoint) {
+    #section_1 {
+        background-color: $secondary-color;
+        height: 15rem;
+        margin-left: 0.5rem;
+        margin-top: -10rem;
+        width: 10rem;
+    }
+
+    .quote1_cite {
+        background-color: $secondary-color;
+        font-style: italic;
+        margin-left: 13rem;
+        margin-top: -7rem;
+        width: 15rem;
+    }
+
+    .img-cirkel_1 {
+        background-color: $secondary-color;
+        height: 7rem;
+        margin-left: 2rem;
+        margin-top: 6rem;
+        width: 7rem;
+    }
+
+    .blockquote{
+        first_quote {
+        border: none !important;
+        font-size: 1rem;
+        margin-left: -5rem;
+        }
+        cite {
+        font-size: 0.7rem;
+        font-style: italic;
+        }
+    }
+
+    .quote2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $wide-screen-breakpoint) {
+    #section_2 {
+        clear: both;
+        display: grid;
+        grid-template-columns: 40rem 40rem 40rem;
+        grid-template-rows: 40rem;
+        margin-left: 2rem;
+    }
+
+    .content-titel2 {
+        color: $primary-color;;
+        font-weight: lighter;
+        height: 10rem;
+        margin-bottom: 1rem;
+        margin-left: 60rem;
+        width: 120rem;
+    }
+
+    .content-titel {
+        display: none;
+    }
+
+    #card_img {
+        align-items: stretch;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 20rem;
+        width: 35rem;
+    }
+
+    .card1 {
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        grid-column: 1;
+        grid-row: 1;
+        height: 42rem;
+        margin-left: 25rem;
+        width: 35rem;
+    }
+
+    #card_btn {
+        background-color: #E3170A;
+        border-radius: 4px;
+        color: $secondary-color;
+        margin-left: 18rem;
+        padding: 0.5rem 2rem 0.5rem 2rem;
+        text-decoration: none;
+    }
+
+    #card_text {
+        font-size: 1.5rem;
+        text-align: left;
+        width: 30rem;
+    }
+
+    .card2 {
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        font-size: 1.5rem;
+        grid-column: 2;
+        grid-row: 1;
+        height: 42rem;
+        margin-left: 25rem;
+        width: 35rem;
+    }
+
+    .card3 {
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        font-size: 1.5rem;
+        grid-column: 3;
+        grid-row: 1;
+        height: 42rem;
+        margin-left: 25rem;
+        width: 35rem;
+    }
+
+    #star {
+        margin-right: 10rem;
+    }
+
+    .carousel {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $wide-screen-breakpoint)and (min-width: $small-screen-breakpoint) {
+    #section_2 {
+        @include carouselstyle;
+        width: 55rem;
+    }
+
+    #slide_img {
+       @include CarouselSlideImgStyle;
+        margin-left: -3rem;
+        margin-top: -2rem;
+        width: 35rem;
+    }
+    .content-titel {
+        color: $primary-color;;
+        font-size: 3rem;
+        height: 5rem;
+        margin-bottom: 3rem;
+        margin-left: 12rem;
+        margin-top: 2rem;
+        width: 40rem;
+    }
+    .content-titel2 {
+       @include removeHeadlineLarge;
+    }
+
+    * {
+       @include styleScrollbar;
+    }
+
+    *::-webkit-scrollbar {
+        width: 0;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background: transparent;
+        border: none;
+    }
+
+    ol, li {
+        @include styleOlLi;
+    }
+    .carousel {
+        height: 50rem;
+        margin-left: 9rem;
+        padding-top: 20rem;
+        perspective: 100px;
+        position: relative;
+        width: 30rem;
+    }
+
+    p#carousel_text {
+        font-size: 1.5rem;
+        height: 15rem;
+        width: 35rem;
+    }
+
+   
+    .textarea_carousel {
+        color: $primary-color;;
+        font-size: 1rem;
+        height: 7rem;
+        margin-top: 22rem;
+        padding-left: 2rem;
+        width: 35rem;
+    }
+
+    #book_btn {
+        background-color: #E3170A;
+        border-radius: 6px;
+        color: $secondary-color;
+        float: right;
+        font-size: 1.5rem;
+        font-weight: normal;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+        margin-top: 4rem;
+        padding: 1rem 3rem 1rem 3rem;
+        text-decoration: none;
+    }
+
+    .carousel__viewport {
+        @include viewportStyle;
+    }
+
+    .carousel__slide {
+        counter-increment: item;
+        padding: 10px;
+        padding-left: 3rem;
+        padding-right: 2rem;
+        position: relative;
+        width: 35rem;
+    }
+
+    li#carousel__slide1 {
+        @include carouselSlidesStyle;
+    }
+
+    li#carousel__slide2 {
+        @include carouselSlidesStyle;
+    }
+
+    li#carousel__slide3 {
+        @include carouselSlidesStyle;
+    }
+
+    .carousel__slide:before {
+   @include carouselSlideBefore;
+    }
+
+    .carousel__slide:after {
+    @include carouselSlideAfter;
+    }
+
+    .carousel__snapper {
+     @include carouselSnapper;
+    }
+
+    @media (hover: hover) {
+        .carousel__snapper {
+        @include snapperAnimation;
+        }
+
+        .carousel__slide:last-child .carousel__snapper {
+            animation-name: tostart, snap;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .carousel__snapper {
+            animation-name: none;
+        }
+    }
+
+    .carousel:hover .carousel__snapper, .carousel:focus-within .carousel__snapper {
+        animation-name: none;
+    }
+
+    .carousel__navigation {
+     @include carouselNavigation;
+    }
+
+    .carousel::before, .carousel::after, .carousel__prev, .carousel__next {
+        @include styleBeforeAfter;
+    }
+
+    .carousel::before, .carousel__prev {
+        left: -1rem;
+    }
+
+    .carousel::after, .carousel__next {
+       @include afterNextAnimation;
+    }
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+    #section_2 {
+      @include carouselstyle;
+        width: 35rem;
+    }
+
+    #slide_img {
+        @include CarouselSlideImgStyle;
+        margin-left: -1rem;
+        margin-top: -2rem;
+        width: 33rem;
+    }
+    .content-titel {
+        color: $primary-color;;
+        font-size: 1.9rem;
+        height: 5rem;
+        margin-bottom: 1rem;
+        margin-left: -12rem;
+        margin-top: -10rem;
+        width: 26rem;
+    }
+    .content-titel2 {
+        @include removeHeadlineLarge;
+    }
+
+    * {
+        @include styleScrollbar;
+    }
+
+    *::-webkit-scrollbar {
+        width: 0;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background: transparent;
+        border: none;
+    }
+
+    ol, li {
+        @include styleOlLi; 
+    }
+    .carousel {
+        height: 50rem;
+        margin-left: -16.5rem;
+        margin-top: -1rem;
+        position: relative;
+        padding-top: 20rem;
+        perspective: 100px;
+        width: 32rem;
+    }
+
+    p#carousel_text {
+        font-size: 1.8rem;
+        height: 15rem;
+        margin-left: 1rem;
+        width: 30rem;
+    }
+
+    
+    .textarea_carousel {
+        color: $primary-color;;
+        height: 0.5rem;
+        margin-left: 1rem;
+        margin-top: 22rem;
+        padding-left: 2rem;
+        width: 33rem;
+    }
+
+    #stars {
+        margin-left: 1rem;
+    }
+
+    #book_btn {
+        background-color: #E3170A;
+        border-radius: 4px;
+        color: $secondary-color;
+        float: right;
+        font-size: 0.9rem;
+        font-weight: normal;
+        margin-bottom: 2rem;
+        margin-top: 7rem;
+        margin-right: 2rem;
+        text-decoration: none;
+        padding: 0.5rem 2rem 0.5rem 2rem;
+    }
+
+    .carousel__viewport {
+        @include viewportStyle;
+    }
+
+    .carousel__slide {
+        counter-increment: item;
+        padding: 5px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        position: relative;
+        width: 32rem;
+    }
+
+    li#carousel__slide1 {
+       @include carouselSlideStyle2;
+    }
+
+    li#carousel__slide2 {
+        @include carouselSlideStyle2;
+    }
+
+    li#carousel__slide3 {
+        @include carouselSlideStyle2;
+    }
+
+    .carousel__slide:before {
+       @include carouselSlideBefore;
+    }
+
+    .carousel__slide:after {
+        @include carouselSlideAfter;
+    }
+
+    .carousel__snapper {
+        @include carouselSnapper;
+    }
+
+    @media (hover: hover) {
+        .carousel__snapper {
+            @include snapperAnimation;
+        }
+
+        .carousel__slide:last-child .carousel__snapper {
+            animation-name: tostart, snap;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .carousel__snapper {
+            animation-name: none;
+        }
+    }
+
+    .carousel:hover .carousel__snapper, .carousel:focus-within .carousel__snapper {
+        animation-name: none;
+    }
+
+    .carousel__navigation {
+        @include carouselNavigation;
+    }
+
+    .carousel::before, .carousel::after, .carousel__prev, .carousel__next {
+        @include styleBeforeAfter;
+    }
+
+    .carousel::before, .carousel__prev {
+        left: -1rem;
+    }
+
+    .carousel::after, .carousel__next {
+       @include afterNextAnimation;
+    }
+
+}
+
+@media screen and (min-width: $wide-screen-breakpoint) {
+    #section_3 {
+        background-color: $primary-color;;
+        color: $secondary-color;
+        height: 45rem;
+        margin-top: 30rem;
+        width: 160rem;
+    }
+
+    #text-box {
+        font-size: 2.5rem;
+        font-weight: normal;
+        margin-left: 60rem;
+        text-indent: 1rem;
+        width: 50rem;
+    }
+
+    #read_story {
+        background-color: $primary-color;;
+        border: solid #8ACFE5;
+        color: #8ACFE5;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-left: 70rem;
+        margin-top: 10rem;
+        padding: 1rem 3rem 1rem 3rem;
+    }
+
+    #read_story:hover {
+        color: gray;
+        text-decoration: underline;
+    }
+
+    #online_btn:hover {
+        color: gray;
+        text-decoration: underline;
+    }
+
+    #online_btn2 {
+        background-color: #E3170A;
+        border-radius: 4px;
+        color: $secondary-color;
+        font-size: 4rem;
+        font-weight: bold;
+        margin-left: 35rem;
+        margin-top: -40rem;
+        padding: 0.5rem 5rem 0.5rem 5rem;
+        text-decoration: none;
+        a {
+        color: $secondary-color;
+        }
+        a:hover {
+            color: #b6bdb5;
+            text-decoration: underline;
+        }
+    }
+
+    #onsite_btn2 {
+        background: #8ACFE5;
+        border-radius: 4px;
+        color: $primary-color;
+        font-size: 4rem;
+        font-weight: bold;
+        margin-left: 83rem;
+        margin-top: -36rem;
+        padding: 1rem 7rem 1rem 7rem;
+        text-decoration: none;
+        &:hover {
+        color: #b6bdb5;
+        text-decoration: underline;
+        }
+    } 
+}
+
+@media screen and (max-width: $wide-screen-breakpoint) and (min-width: $small-screen-breakpoint) {
+    #onsite_btn2 {
+        background: #8ACFE5;
+        border-radius: 4px;
+        color: $primary-color;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 3rem;
+        margin-left: 27rem;
+        margin-top: 4rem;
+        padding: 1rem 5rem 1rem 5rem;
+    }
+
+    #online_btn2 {
+        background-color: $secondary-color;
+        border-radius: 4px;
+        color: #36769D;
+        font-weight: bold;
+        margin-left: 32rem;
+        text-decoration: underline;
+    }
+
+    #online_btn {
+        background-color: $secondary-color;
+    }
+
+    #text-box {
+        color: #ffffff;
+        font-size: 2rem;
+        font-weight: lighter;
+        height: 20rem;
+        margin-left: 25rem;
+        padding-bottom: 20rem;
+        text-align: center;
+        width: 30rem;
+    }
+
+    #read_story {
+        background-color: $primary-color;;
+        border-radius: 4px;
+        border: solid 2px #8ACFE5;
+        color: #8ACFE5;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        margin-left: 27rem;
+        margin-top: 1rem;
+        padding: 1.5rem 6rem 1.5rem 6rem;
+    }
+
+    .black_box {
+        background-color: $primary-color;;
+        height: 40rem;
+        margin-top: 3rem;
+        padding-bottom: 6rem;
+        padding-top: 6rem;
+        width: 80rem;
+    }
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+    #section_3 {
+        width: 35rem;
+    }
+
+    #onsite_btn2 {
+        background: #8ACFE5;
+        border-radius: 4px;
+        color: $primary-color;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        margin-left: 10rem;
+        margin-top: 4rem;
+        padding: 1rem 2.5rem 1rem 2.5rem;
+    }
+
+    #online_btn2 {
+        background-color: $secondary-color;
+        border-radius: 4px;
+        color: #36769D;
+        font-size: 1rem;
+        margin-left: 12rem;
+        text-decoration: underline;
+    }
+
+    #online_btn {
+        background-color: $secondary-color;
+    }
+
+    #text-box {
+        color: #ffffff;
+        font-size: 1.5rem;
+        font-weight: lighter;
+        height: 10rem;
+        margin-left: 3rem;
+        margin-top: 5rem;
+        padding-bottom: 3rem;
+        text-align: center;
+        width: 30rem;
+    }
+
+    .black_box {
+        background-color: $primary-color;;
+        height: 30rem;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        width: 40rem;
+    }
+
+    #read_story {
+        background-color: $primary-color;;
+        border: solid 2px #8ACFE5;
+        border-radius: 4px;
+        color: #8ACFE5;
+        font-size: 1rem;
+        margin-left: 11rem;
+        margin-top: 2.5rem;
+        padding: 1rem 3rem 1rem 3rem;
+    }
+}
+
+@media screen and (min-width: $wide-screen-breakpoint) {
+    #section_4 {
+        clear: both;
+        display: grid;
+        grid-template-columns: repeat (2 1fr);
+        grid-template-rows: repeat(2 1fr);
+        margin-top: -8rem;
+        margin-bottom: 15rem;
+        padding: 80px;
+    }
+
+    .img_girl {
+        grid-column: 0/1;
+        grid-row: 0/1;
+        height: 60rem;
+        margin-left: -8rem;
+        width: 80rem;
+    }
+
+    .text_1 {
+        grid-column: 3/6;
+        grid-row: 0/3;
+        font-size: 3rem;
+        height: 50rem;
+        margin-right: 15rem;
+        padding-top: 2rem;
+        width: 60rem;
+    }
+
+    .textarea_titel {
+        font-size: 2rem;
+    }
+
+    .text_2 {
+        grid-column: 0/3;
+        grid-row: 3/6;
+        font-size: 3rem;
+        height: 50rem;
+        margin-right: 15rem;
+        padding-top: 2rem;
+        width: 60rem;
+    }
+
+    #larger_text {
+        font-size: 5rem;
+        text-align: left;
+    }
+
+    #larger_text2 {
+        font-size: 5rem;
+        text-align: left;
+    }
+
+    .img_hacked {
+        grid-column: 2/7;
+        grid-row: 2/7;
+        height: 60rem;
+        margin-left: -5rem;
+        width: 80rem;
+    }
+
+    #btn3 {
+        background-color: #E3170A;
+        border-radius: 4px;
+        color: $secondary-color;
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 5rem;
+        padding: 1rem 5rem 1rem 5rem;
+        text-decoration: none;
+            &:hover {
+            color: #b6bdb5;
+            text-decoration: underline;
+            }
+    }
+
+    a {
+        color: $secondary-color;
+    }
+
+    #btn4 {
+        background-color: #E3170A;
+        border-radius: 4px;
+        color: $secondary-color;
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 2rem;
+        padding: 0.5rem 5rem 0.5rem 5rem;
+        text-decoration: none;
+            &:hover {
+            color: #b6bdb5;
+            text-decoration: underline;
+            }
+    } 
+}
+
+@media screen and (max-width: $wide-screen-breakpoint) and (min-width: $small-screen-breakpoint) {
+    #section_4 {
+        width: 80rem;
+    }
+
+    .img_girl {
+        height: 50rem;
+        object-fit: fill;
+        width: 80rem;
+    }
+
+    .text_1 {
+        font-size: 3rem;
+        margin-left: 2rem;
+        width: 70rem;
+         h2 {
+        font-size: 5rem;
+        font-stretch: expanded;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-top: 4rem;
+        padding-bottom: 2rem;
+        }
+    }
+
+    #btn3 {
+        background-color: #E3170A;
+        border-radius: 6px;
+        color: $secondary-color;
+        font-size: 2.5rem;
+        margin-bottom: 7rem;
+        margin-top: 4rem;
+        padding: 2rem 11rem 2rem 11rem;
+        text-decoration: none;
+    }
+
+    .img_hacked {
+        height: 50rem;
+        object-fit: fill;
+        width: 80rem;
+    }
+
+    .text_2 {
+        font-size: 3rem;
+        margin-left: 2rem;
+        width: 70rem;
+         h2 {
+        font-size: 5rem;
+        font-stretch: expanded;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-top: 4rem;
+        padding-bottom: 2rem;
+        }
+    }
+
+    #btn4 {
+        background-color: #E3170A;
+        border-radius: 6px;
+        color: $secondary-color;
+        font-size: 2.5rem;
+        margin-bottom: 10rem;
+        margin-top: 3rem;
+        padding: 2rem 11rem 2rem 11rem;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+    #section_4 {
+        width: 45rem;
+    }
+
+    .img_girl {
+        height: 23rem;
+        object-fit: fill;
+        width: 40rem;
+    }
+
+    .text_1 {
+        font-size: 2rem;
+        margin-left: 2rem;
+        width: 30rem;
+        h2 {
+        font-size: 2rem;
+        font-stretch: expanded;
+        font-weight: bold;
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+        }
+    }
+
+    #btn3 {
+        background-color: #E3170A;
+        border-radius: 4px;
+        color: $secondary-color;
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+        padding: 0.5rem 3rem 0.5rem 3rem;
+        text-decoration: none;
+    }
+
+    .img_hacked {
+        height: 23rem;
+        object-fit: fill;
+        width: 40rem;
+    }
+
+    .text_2 {
+        font-size: 2rem;
+        margin-left: 2rem;
+        width: 30rem;
+         h2 {
+        font-size: 2rem;
+        font-stretch: expanded;
+        font-weight: bold;
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+        }
+    }
+
+    #btn4 {
+        background-color: #E3170A;
+        border-radius: 4px;
+        color: $secondary-color;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        padding: 0.5rem 3rem 0.5rem 3rem;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: $wide-screen-breakpoint) {
+    .footer {
+        background-color: $primary-color;;
+        clear: both;
+        color: $secondary-color;
+        height: 500px;
+        padding-bottom: 60rem;
+        padding-top: 50px;
+        width: 160rem;
+    }
+
+    .boxes {
+        box-sizing: border-box;
+        float: left;
+        font-size: 2rem;
+        padding: 1rem;
+        padding-left: 3rem;
+        padding-top: 20rem;
+        width: 33.33%;
+    }
+
+    .other_boxes {
+        padding-right: 35rem;
+        font-size: 2rem;
+        width: 70rem;
+        height: 15rem;
+        float: right;
+    }
+
+    .last_box {
+        height: 30rem;
+        padding-left: 30rem;
+        width: 65rem;
+    }
+
+    #site_map {
+        font-size: 3rem;
+        width: 20rem;
+    }
+
+    .the_site {
+        width: 20rem;
+    }
+
+    #esc {
+        font-size: 3rem;
+    }
+
+    #follow_us {
+        font-size: 3rem;
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: $wide-screen-breakpoint) and (min-width: $small-screen-breakpoint) {
+    .footer {
+        background-color: $primary-color;;
+        clear: both;
+        color: $secondary-color;
+        height: 25;
+        padding-top: 50px;
+        width: 80rem;
+    }
+
+    .boxes {
+        padding-bottom: 5rem;
+        padding-left: 5rem;
+        padding-top: 2.5rem;
+         p {
+        font-size: 2rem;
+        text-align: left;
+        }
+    }
+
+    #page {
+        margin-bottom: -1rem;
+        text-align: left;
+        width: 53rem;
+    }
+
+    .first__box {
+        @include sizesmall;
+    }
+
+    #esc {
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+
+    .the_site {
+        @include sizesmall;
+    }
+
+    #site_map {
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .last_box {
+        font-size: 0.5rem;
+    }
+
+    #follow_us {
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .other_boxes {
+        @include otherBoxesStyle;
+    }
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+    .footer {
+        background-color: $primary-color;;
+        clear: both;
+        color: $secondary-color;
+        height: 30;
+        padding-top: 10px;
+        width: 40rem;
+    }
+
+    .boxes {
+        padding: 10px 10px 0px 10px;
+         p {
+        font-size: 1rem;
+        margin-top: -1rem;
+        text-align: left;
+        }
+    }
+
+    #page {
+        font-size: 1rem;
+        height: 10rem;
+        margin-top: 1rem;
+        text-align: left;
+        width: 25rem;
+    }
+
+    .first__box {
+        @include sizesmall;
+    }
+
+    #esc {
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+    }
+
+    .the_site {
+        @include sizesmall;
+    }
+
+    #site_map {
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+    }
+
+    .last_box {
+        font-size: 0.5rem;
+    }
+
+    #follow_us {
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+    }
+
+    .other_boxes {
+        @include otherBoxesStyle;
+    }
+}

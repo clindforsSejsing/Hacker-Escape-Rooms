@@ -1,0 +1,147 @@
+@mixin carouselstyle{
+    margin-bottom: 0;
+    margin-left: 15rem;
+    margin-top: 13rem;
+    padding: 0 1.25rem;
+}
+@mixin CarouselSlideImgStyle{
+    border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        height: 22rem;
+}
+@mixin removeHeadlineLarge{
+    display:none;
+}
+@mixin styleScrollbar{
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
+}
+@mixin styleOlLi{
+    height: 45rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+@mixin viewportStyle{
+    bottom: 0;
+    counter-reset: item;
+    display: flex;
+    height: 53rem;
+    left: 0;
+    overflow-x: scroll;
+    position: absolute;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    right: 0;
+    top: 0;
+    width: 50rem;
+}
+@mixin carouselSlidesStyle{
+    border-radius: 6px;
+    box-shadow: 3px 3px 1px 1px #b6bdb5;
+    height: 45rem;
+    margin-right: 2rem;
+    width: 35rem;
+}
+@mixin carouselSlideStyle2{
+    border-radius: 6px;
+    box-shadow: 3px 3px 1px 1px #b6bdb5;
+    height: 50rem;
+    margin-right: 2rem;
+    width: 33rem;
+}
+@mixin carouselSlideBefore{
+    padding-right: 2rem;
+    position: absolute;
+    transform: translate3d(-50%, -40%, 70px);
+}
+@mixin carouselSlideAfter{
+    padding-right: 7rem;
+    position: absolute;
+    transform: translate3d(-50%, -40%, 70px);
+}
+@mixin carouselSnapper{
+    height: 35rem;
+    left: -1.5rem;
+    position: absolute;
+    scroll-snap-align: start;
+    top: 0;
+    width: 45rem;
+}
+@mixin snapperAnimation{
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+}
+@mixin carouselNavigation{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+@mixin styleBeforeAfter{
+    border-radius: 50%;
+    font-size: 0;
+    height: 4rem;
+    outline: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    width: 4rem;
+}
+@mixin afterNextAnimation{
+    right: -1rem;
+    transform: translate3d(1rem 1rem 1rem 1rem);
+}
+@keyframes tonext {
+    75% {
+        left: 0;
+    }
+    95% {
+        left: 100%;
+    }
+    98% {
+        left: 100%;
+    }
+    99% {
+        left: 0;
+    }
+}
+@keyframes tostart {
+    75% {
+        left: 0;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    98% {
+        left: -300%;
+    }
+
+    99% {
+        left: 0;
+    }
+}
+
+@keyframes snap {
+    96% {
+        scroll-snap-align: center;
+    }
+
+    97% {
+        scroll-snap-align: none;
+    }
+
+    99% {
+        scroll-snap-align: none;
+    }
+
+    100% {
+        scroll-snap-align: center;
+    }
+}
