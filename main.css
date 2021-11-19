@@ -1,19 +1,63 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-/*Large screen(min-width: 800px),
-Medium screen(max-width: 800px),
-Small screen(max-width: 450px). A responsive site for company Hacker Escape Rooms by author@CLS*/
+@keyframes menu_fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
+}
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
 body {
   background-color: #FFFFFF;
   width: 500rem;
 }
 
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
-/*-----------------*/
-/*Large screen (header, h1, logo, hero, img, navbar)*/
 @media screen and (min-width: 800px) {
   header {
     background-color: #011827;
@@ -26,7 +70,6 @@ body {
     text-align: left;
     width: 160rem;
   }
-
   header h1 {
     color: #FFFFFF;
     font-size: 6rem;
@@ -60,11 +103,10 @@ body {
     width: 160rem;
   }
 
-  div.navbar_1 {
+  .navbar_1 div {
     background-color: #011827;
   }
-
-  nav.navbar_1 {
+  .navbar_1 nav {
     background-color: #011827;
     color: #FFFFFF;
     height: 1rem;
@@ -74,7 +116,7 @@ body {
     width: 160rem;
   }
 
-  ul.menu_bar {
+  .menu_bar ul {
     background-color: #011827;
     border: 0;
     color: #FFFFFF;
@@ -87,13 +129,11 @@ body {
     margin: 0 20rem 16rem 32rem;
     padding: 2rem;
   }
-
   .menu_bar li {
     font-size: 3rem;
     font-weight: bold;
     padding-left: 5rem;
   }
-
   .menu_bar li#other-color {
     background-color: #011827;
     color: #8ACFE5;
@@ -107,7 +147,6 @@ body {
     display: none;
   }
 }
-/*Medium screen (header, h1, logo, hero, img, navbar) */
 @media screen and (max-width: 800px) and (min-width: 450px) {
   header {
     background-color: #011827;
@@ -117,7 +156,6 @@ body {
     margin-bottom: 0;
     width: 80rem;
   }
-
   header h1 {
     color: #FFFFFF;
     display: block;
@@ -167,7 +205,6 @@ body {
     z-index: 2;
     animation: menu_fade 0.7s;
   }
-
   .navbar a {
     color: #FFFFFF;
     display: inline-block;
@@ -180,7 +217,6 @@ body {
     transition: 0.1s;
     width: 15rem;
   }
-
   .navbar li {
     height: 5rem;
     margin-left: 24rem;
@@ -189,12 +225,10 @@ body {
     position: relative;
     width: 65rem;
   }
-
   .navbar a:hover {
     color: #b6bdb5;
   }
-
-  a.closebtn {
+  .navbar a.closebtn {
     color: #FFFFFF;
     font-size: 10rem;
     float: left;
@@ -206,11 +240,9 @@ body {
   div#open_btn {
     height: 1rem;
   }
-
-  button.openbtn {
-    font-size: 7rem;
-    margin-top: 4rem;
-    margin-left: 67rem;
+  div#open_btn a {
+    padding: 7px;
+    transition: margin-top 0s;
   }
 
   .openbtn {
@@ -220,26 +252,15 @@ body {
     font-size: 50px;
     margin-left: 35rem;
   }
-
-  .openbtn:hover {
+  .openbtn button {
+    font-size: 7rem;
+    margin-top: 4rem;
+    margin-left: 67rem;
+  }
+  .openbtn .openbtn:hover {
     background-color: #b6bdb5;
   }
-
-  .open_btn a {
-    padding: 7px;
-    transition: margin-top 0s;
-  }
-
-  @keyframes menu_fade {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 }
-/*Small screen (header, h1, logo, hero, img)*/
 @media screen and (max-width: 450px) {
   header {
     background-color: #011827;
@@ -250,7 +271,6 @@ body {
     width: 45rem;
     z-index: 1;
   }
-
   header h1 {
     background-color: #011827;
     color: #FFFFFF;
@@ -315,7 +335,6 @@ body {
     z-index: 2;
     animation: menu_fade 0.7s;
   }
-
   .navbar a {
     color: #FFFFFF;
     display: inline-block;
@@ -328,7 +347,6 @@ body {
     transition: 0.1s;
     width: 15rem;
   }
-
   .navbar li {
     height: 3rem;
     margin-left: 6rem;
@@ -338,34 +356,23 @@ body {
     position: relative;
     width: 65rem;
   }
-
   .navbar a:hover {
     color: #b6bdb5;
   }
-
   .navbar a:first-child {
     margin-right: 15rem;
     margin-bottom: 1rem;
   }
-
   .navbar li:nth-child(3) {
     margin-top: 12rem;
-  }
-
-  a.closebtn {
-    font-size: 10rem;
-    float: left;
-    margin-left: 23.5rem;
-    margin-top: 2rem;
   }
 
   div#open_btn {
     height: 1rem;
   }
-
-  button.openbtn {
-    margin-top: 3rem;
-    margin-left: 30rem;
+  div#open_btn a {
+    padding: 7px;
+    transition: margin-top 0s;
   }
 
   .openbtn {
@@ -375,26 +382,21 @@ body {
     font-size: 50px;
     margin-left: 35rem;
   }
-
-  .openbtn:hover {
+  .openbtn .openbtn:hover {
     background-color: #b6bdb5;
   }
-
-  .open_btn a {
-    padding: 7px;
-    transition: margin-top 0s;
+  .openbtn button {
+    margin-top: 3rem;
+    margin-left: 30rem;
   }
 
-  @keyframes menu_fade {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  a.closebtn {
+    font-size: 10rem;
+    float: left;
+    margin-left: 23.5rem;
+    margin-top: 2rem;
   }
 }
-/*Large screen ( btn´s, main)*/
 @media screen and (min-width: 800px) {
   #online_btn {
     background-color: #E3170A;
@@ -407,9 +409,12 @@ body {
     padding: 0.5rem 5rem 0.5rem 5rem;
     text-decoration: none;
   }
-
   #online_btn a {
     color: #FFFFFF;
+  }
+  #online_btn a:hover {
+    color: #b6bdb5;
+    text-decoration: underline;
   }
 
   #onsite_btn {
@@ -423,13 +428,7 @@ body {
     padding: 1rem 7rem 1rem 7rem;
     text-decoration: none;
   }
-
-  #onsite_btn:hover {
-    color: #b6bdb5;
-    text-decoration: underline;
-  }
-
-  #online_btn a:hover {
+  #onsite_btn #onsite_btn:hover {
     color: #b6bdb5;
     text-decoration: underline;
   }
@@ -439,7 +438,6 @@ body {
     width: 180rem;
   }
 }
-/*Medium screen (btn´s, main)*/
 @media screen and (max-width: 800px) and (min-width: 450px) {
   #onsite_btn {
     background: #8ACFE5;
@@ -468,7 +466,6 @@ body {
     width: 50rem;
   }
 }
-/* remove navbar and cards in Medium-version*/
 @media screen and (max-width: 800px) and (min-width: 450px) {
   .navbar_1 {
     display: none;
@@ -490,7 +487,6 @@ body {
     display: none;
   }
 }
-/*Small screen(btn´s, main)*/
 @media screen and (max-width: 450px) {
   #onsite_btn {
     background: #8ACFE5;
@@ -519,7 +515,6 @@ body {
     width: 30rem;
   }
 }
-/* remove navbar and cards in Small screen*/
 @media screen and (max-width: 450px) {
   .navbar_1 {
     display: none;
@@ -541,7 +536,6 @@ body {
     display: none;
   }
 }
-/*Large screen (section 1, quote part) */
 @media screen and (min-width: 800px) {
   #section_1 {
     background-color: #FFFFFF;
@@ -586,20 +580,17 @@ body {
     border: none !important;
     font-size: 2.5rem;
   }
+  blockquote first_quote {
+    width: 70rem;
+  }
+  blockquote second_quote {
+    width: 70rem;
+  }
 
   cite {
     font-size: 1rem;
   }
-
-  blockquote.first_quote {
-    width: 70rem;
-  }
-
-  blockquote.second_quote {
-    width: 70rem;
-  }
 }
-/*Medium screen (section 1, quote part)*/
 @media screen and (max-width: 800px) and (min-width: 450px) {
   #section_1 {
     background-color: #FFFFFF;
@@ -638,7 +629,6 @@ body {
     display: none;
   }
 }
-/*Small screen (section 1, quote part)*/
 @media screen and (max-width: 450px) {
   #section_1 {
     background-color: #FFFFFF;
@@ -664,13 +654,12 @@ body {
     width: 7rem;
   }
 
-  blockquote.first_quote {
+  .blockquote first_quote {
     border: none !important;
     font-size: 1rem;
     margin-left: -5rem;
   }
-
-  blockquote cite {
+  .blockquote cite {
     font-size: 0.7rem;
     font-style: italic;
   }
@@ -679,7 +668,6 @@ body {
     display: none;
   }
 }
-/*Large screen (cards, btn´s, removal of carousel)*/
 @media screen and (min-width: 800px) {
   #section_2 {
     clear: both;
@@ -765,7 +753,6 @@ body {
     display: none;
   }
 }
-/*Medium screen (carousel)*/
 @media screen and (max-width: 800px) and (min-width: 450px) {
   #section_2 {
     margin-bottom: 0;
@@ -784,7 +771,6 @@ body {
     width: 35rem;
   }
 
-  /*headline*/
   .content-titel {
     color: #011827;
     font-size: 3rem;
@@ -795,7 +781,6 @@ body {
     width: 40rem;
   }
 
-  /*remove other headline, displayed in Large screen*/
   .content-titel2 {
     display: none;
   }
@@ -826,10 +811,6 @@ body {
     padding: 0;
   }
 
-  ol {
-    height: 45rem;
-  }
-
   .carousel {
     height: 50rem;
     margin-left: 9rem;
@@ -845,7 +826,6 @@ body {
     width: 35rem;
   }
 
-  /*h2 texten*/
   .textarea_carousel {
     color: #011827;
     font-size: 1rem;
@@ -877,9 +857,9 @@ body {
     left: 0;
     overflow-x: scroll;
     position: absolute;
-    right: 0;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    right: 0;
     top: 0;
     width: 50rem;
   }
@@ -937,8 +917,6 @@ body {
     top: 0;
     width: 45rem;
   }
-
-  /*--keyframes---*/
 }
 @media screen and (max-width: 800px) and (min-width: 450px) and (hover: hover) {
   .carousel__snapper {
@@ -994,55 +972,6 @@ body {
     transform: translate3d(1rem 1rem 1rem 1rem);
   }
 }
-@media screen and (max-width: 800px) and (min-width: 450px) {
-  @keyframes tonext {
-    75% {
-      left: 0;
-    }
-    95% {
-      left: 100%;
-    }
-    98% {
-      left: 100%;
-    }
-    99% {
-      left: 0;
-    }
-  }
-}
-@media screen and (max-width: 800px) and (min-width: 450px) {
-  @keyframes tostart {
-    75% {
-      left: 0;
-    }
-    95% {
-      left: -300%;
-    }
-    98% {
-      left: -300%;
-    }
-    99% {
-      left: 0;
-    }
-  }
-}
-@media screen and (max-width: 800px) and (min-width: 450px) {
-  @keyframes snap {
-    96% {
-      scroll-snap-align: center;
-    }
-    97% {
-      scroll-snap-align: none;
-    }
-    99% {
-      scroll-snap-align: none;
-    }
-    100% {
-      scroll-snap-align: center;
-    }
-  }
-}
-/*Small screen (carousel)*/
 @media screen and (max-width: 450px) {
   #section_2 {
     margin-bottom: 0;
@@ -1061,7 +990,6 @@ body {
     width: 33rem;
   }
 
-  /*headline*/
   .content-titel {
     color: #011827;
     font-size: 1.9rem;
@@ -1072,7 +1000,6 @@ body {
     width: 26rem;
   }
 
-  /*remove other headline, displayed in desc-version*/
   .content-titel2 {
     display: none;
   }
@@ -1103,10 +1030,6 @@ body {
     padding: 0;
   }
 
-  ol {
-    height: 45rem;
-  }
-
   .carousel {
     height: 50rem;
     margin-left: -16.5rem;
@@ -1124,7 +1047,6 @@ body {
     width: 30rem;
   }
 
-  /*h2 texten*/
   .textarea_carousel {
     color: #011827;
     height: 0.5rem;
@@ -1215,13 +1137,11 @@ body {
   .carousel__snapper {
     height: 35rem;
     left: -1.5rem;
-    scroll-snap-align: start;
     position: absolute;
+    scroll-snap-align: start;
     top: 0;
     width: 45rem;
   }
-
-  /*--keyframes---*/
 }
 @media screen and (max-width: 450px) and (hover: hover) {
   .carousel__snapper {
@@ -1277,55 +1197,6 @@ body {
     transform: translate3d(1rem 1rem 1rem 1rem);
   }
 }
-@media screen and (max-width: 450px) {
-  @keyframes tonext {
-    75% {
-      left: 0;
-    }
-    95% {
-      left: 100%;
-    }
-    98% {
-      left: 100%;
-    }
-    99% {
-      left: 0;
-    }
-  }
-}
-@media screen and (max-width: 450px) {
-  @keyframes tostart {
-    75% {
-      left: 0;
-    }
-    95% {
-      left: -300%;
-    }
-    98% {
-      left: -300%;
-    }
-    99% {
-      left: 0;
-    }
-  }
-}
-@media screen and (max-width: 450px) {
-  @keyframes snap {
-    96% {
-      scroll-snap-align: center;
-    }
-    97% {
-      scroll-snap-align: none;
-    }
-    99% {
-      scroll-snap-align: none;
-    }
-    100% {
-      scroll-snap-align: center;
-    }
-  }
-}
-/*Large screen (section 3, btn´s, text-area)*/
 @media screen and (min-width: 800px) {
   #section_3 {
     background-color: #011827;
@@ -1375,9 +1246,12 @@ body {
     padding: 0.5rem 5rem 0.5rem 5rem;
     text-decoration: none;
   }
-
   #online_btn2 a {
     color: #FFFFFF;
+  }
+  #online_btn2 a:hover {
+    color: #b6bdb5;
+    text-decoration: underline;
   }
 
   #onsite_btn2 {
@@ -1391,18 +1265,11 @@ body {
     padding: 1rem 7rem 1rem 7rem;
     text-decoration: none;
   }
-
   #onsite_btn2:hover {
     color: #b6bdb5;
     text-decoration: underline;
   }
-
-  #online_btn2 a:hover {
-    color: #b6bdb5;
-    text-decoration: underline;
-  }
 }
-/*Medium screen (section 3, btn´s, text-area)*/
 @media screen and (max-width: 800px) and (min-width: 450px) {
   #onsite_btn2 {
     background: #8ACFE5;
@@ -1461,7 +1328,6 @@ body {
     width: 80rem;
   }
 }
-/*Small screen (section 3, btn´s, text-area)*/
 @media screen and (max-width: 450px) {
   #section_3 {
     width: 35rem;
@@ -1512,7 +1378,6 @@ body {
     width: 40rem;
   }
 
-  /*button*/
   #read_story {
     background-color: #011827;
     border: solid 2px #8ACFE5;
@@ -1524,7 +1389,6 @@ body {
     padding: 1rem 3rem 1rem 3rem;
   }
 }
-/*Large screen (section 4, boxes img, btn´s)*/
 @media screen and (min-width: 800px) {
   #section_4 {
     clear: both;
@@ -1596,6 +1460,10 @@ body {
     padding: 1rem 5rem 1rem 5rem;
     text-decoration: none;
   }
+  #btn3:hover {
+    color: #b6bdb5;
+    text-decoration: underline;
+  }
 
   a {
     color: #FFFFFF;
@@ -1611,18 +1479,11 @@ body {
     padding: 0.5rem 5rem 0.5rem 5rem;
     text-decoration: none;
   }
-
-  #btn3:hover {
-    color: #b6bdb5;
-    text-decoration: underline;
-  }
-
   #btn4:hover {
     color: #b6bdb5;
     text-decoration: underline;
   }
 }
-/*Medium screen (section 4, boxes, img)*/
 @media screen and (max-width: 800px) and (min-width: 450px) {
   #section_4 {
     width: 80rem;
@@ -1639,7 +1500,6 @@ body {
     margin-left: 2rem;
     width: 70rem;
   }
-
   .text_1 h2 {
     font-size: 5rem;
     font-stretch: expanded;
@@ -1671,7 +1531,6 @@ body {
     margin-left: 2rem;
     width: 70rem;
   }
-
   .text_2 h2 {
     font-size: 5rem;
     font-stretch: expanded;
@@ -1692,7 +1551,6 @@ body {
     text-decoration: none;
   }
 }
-/*Small screen (section 4, boxes, img)*/
 @media screen and (max-width: 450px) {
   #section_4 {
     width: 45rem;
@@ -1709,7 +1567,6 @@ body {
     margin-left: 2rem;
     width: 30rem;
   }
-
   .text_1 h2 {
     font-size: 2rem;
     font-stretch: expanded;
@@ -1740,7 +1597,6 @@ body {
     margin-left: 2rem;
     width: 30rem;
   }
-
   .text_2 h2 {
     font-size: 2rem;
     font-stretch: expanded;
@@ -1760,7 +1616,6 @@ body {
     text-decoration: none;
   }
 }
-/*Large screen (footer)*/
 @media screen and (min-width: 800px) {
   .footer {
     background-color: #011827;
@@ -1814,7 +1669,6 @@ body {
     width: 20rem;
   }
 }
-/*Medium screen (footer, boxes)*/
 @media screen and (max-width: 800px) and (min-width: 450px) {
   .footer {
     background-color: #011827;
@@ -1830,7 +1684,6 @@ body {
     padding-left: 5rem;
     padding-top: 2.5rem;
   }
-
   .boxes p {
     font-size: 2rem;
     text-align: left;
@@ -1875,7 +1728,6 @@ body {
     padding: 0px 10px 10px 10px;
   }
 }
-/*Small screen (footer, boxes)*/
 @media screen and (max-width: 450px) {
   .footer {
     background-color: #011827;
@@ -1889,7 +1741,6 @@ body {
   .boxes {
     padding: 10px 10px 0px 10px;
   }
-
   .boxes p {
     font-size: 1rem;
     margin-top: -1rem;
