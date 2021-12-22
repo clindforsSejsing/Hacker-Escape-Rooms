@@ -15,3 +15,5 @@ Requirement list:
 * responsive design for different screen-sizes (mobile and computer)
 * Webpage written in english
 //Car
+
+ps. needs freshening up in scss-file-- another thing to do sometime soon.
